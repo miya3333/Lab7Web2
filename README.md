@@ -5,42 +5,32 @@
 
 ---
 
-### Gambaran Umum
+### 1. Menghilangkan ; pada file xampp -> apache -> config -> php.ini
 
 <table>
   <tr>
-    <td width="50%" align="left">
+    <td width="65%" align="center">
       <img src="file/1.png" alt="Logo atau Tampilan Proyek" width="max-content">
     </td>
     <td width="50%" valign="top">
-        Ini adalah penjelasan lebih detail tentang apa yang dilakukan oleh proyek Anda. Jelaskan tujuan utama, masalah yang dipecahkan, atau nilai yang ditawarkan. Gunakan bahasa yang jelas dan ringkas.
-        Anda bisa menambahkan poin-poin penting di sini:
-        *   Fitur utama pertama dari proyek Anda.
-        *   Fitur utama kedua yang membedakannya.
-        *   Teknologi atau konsep inti yang digunakan.
+      Hilangkan tanda ; (titik koma) pada ekstensi yang akan diaktifkan. </br>
+      Kemudian simpan kembali filenya dan restart Apache web server.
     </td>
   </tr>
 </table>
 
 ---
 
-Ini adalah penjelasan lebih detail tentang apa yang dilakukan oleh proyek Anda. Jelaskan tujuan utama, masalah yang dipecahkan, atau nilai yang ditawarkan. Gunakan bahasa yang jelas dan ringkas.
+### 2. Menghilangkan ; pada file xampp -> apache -> config -> php.ini
 
-Anda bisa menambahkan poin-poin penting di sini:
-
-*   Fitur utama pertama dari proyek Anda.
-*   Fitur utama kedua yang membedakannya.
-*   Teknologi atau konsep inti yang digunakan.
-
----
-
-### Instalasi
-
-Jelaskan langkah-langkah yang dibutuhkan pengguna untuk menginstal dan menjalankan proyek Anda di lingkungan mereka. Berikan contoh kode jika diperlukan.
-
-````bash
-# Contoh langkah-langkah instalasi (sesuaikan dengan proyek Anda)
-git clone https://github.com/username/nama-repository.git
-cd nama-repository
-pip install -r requirements.txt
-# atau perintah instalasi lainnya
+<table>
+  <tr>
+    <td width="65%" align="center">
+      <img src="file/2.png" alt="Logo atau Tampilan Proyek" width="max-content">
+    </td>
+    <td width="50%" valign="top">
+      Hilangkan tanda ; (titik koma) pada ekstensi yang akan diaktifkan. </br>
+      Kemudian simpan kembali filenya dan restart Apache web server.
+    </td>
+  </tr>
+</table>
