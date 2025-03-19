@@ -7,30 +7,21 @@
 
 ### 1. Menghilangkan ; pada file xampp -> apache -> config -> php.ini
 
-<table>
-  <tr>
-    <td width="65%" align="center">
-      <img src="file/1.png" alt="Logo atau Tampilan Proyek" width="max-content">
-    </td>
-    <td width="50%" valign="top">
-      Hilangkan tanda ; (titik koma) pada ekstensi yang akan diaktifkan. </br>
-      Kemudian simpan kembali filenya dan restart Apache web server.
-    </td>
-  </tr>
-</table>
+Hilangkan tanda ; (titik koma) pada ekstensi yang akan diaktifkan. Kemudian simpan kembali filenya dan restart Apache web server.
+
+<img src="file/1.png" width="max-content">
 
 ---
 
-### 2. Menghilangkan ; pada file xampp -> apache -> config -> php.ini
+### 2. Ketik http://localhost:8080/lab11_ci/ci4/public/
 
-<table>
-  <tr>
-    <td width="65%" align="center">
-      <img src="file/2.png" alt="Logo atau Tampilan Proyek" width="max-content">
-    </td>
-    <td width="50%" valign="top">
-      Hilangkan tanda ; (titik koma) pada ekstensi yang akan diaktifkan. </br>
-      Kemudian simpan kembali filenya dan restart Apache web server.
-    </td>
-  </tr>
-</table>
+Akan muncul seperti gambar dibawah. Jika error `The framework needs the following extension(s) installed and loaded: intl.`, `extension=intl`
+
+<img src="file/2.png" width="max-content">
+
+---
+
+[![portfolio](https://img.shields.io/badge/Langkah%201?color=0096D1)](#1-menghilangkan--pada-file-xampp---apache---config---phpini)
+
+
+### 3. 
