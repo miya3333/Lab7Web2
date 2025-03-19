@@ -8,7 +8,7 @@
 
 ### 1. Menghilangkan ; pada file xampp -> apache -> config -> php.ini
 
-Hilangkan tanda ; (titik koma) pada ekstensi yang akan diaktifkan. Kemudian simpan kembali filenya dan restart Apache web server.
+Hilangkan tanda `;` pada ekstensi yang akan diaktifkan. Kemudian simpan kembali filenya dan restart Apache web server.
 
 <img src="file/1.png" width="max-content">
 
