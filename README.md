@@ -251,7 +251,7 @@ Menjadi:
 public function about()
 {
    return view('about', [
-      'title' => 'Halaman Abot',
+      'title' => 'Halaman About',
       'content' => 'Ini adalah halaman abaut yang menjelaskan tentang isi halaman ini.'
    ]);
 }
