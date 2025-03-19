@@ -61,7 +61,7 @@ Jika error:
 The framework needs the following extension(s) installed and loaded: intl.
 ```
 
-Pada baris di langkah 1, belum dihilangkan `;`
+Pada baris di [Langkah 1](#11-aktifkan-extensi), belum dihilangkan `;`
 
 ```bash
 before: ;extension=intl
