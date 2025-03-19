@@ -11,29 +11,26 @@ Aldi Hermansyah - 312310200 - Ti.23.A2
 *   **Praktikum 1** 
     *   1.1. [Aktifkan Extensi](#11-aktifkan-extensi)
     *   1.2. [Buka Browser](#12-buka-browser)
-    *   1.3. [Buka PowerShell/CMD](#13-buka-powershell-atau-cmd)
+    *   1.3. [Buka PowerShell atau CMD](#13-buka-powershell-atau-cmd)
     *   1.4. [Jalankan Perintah](#14-jalankan-perintah)
     *   1.5. [Ubah Nama File](#15-ubah-nama-file)
     *   1.6. [Contoh Error](#16-contoh-error)
     *   1.7. [Menccoba Error](#17-mencoba-error)
-    *   1.8. [Instalasi Prasyarat](#18-instalasi-prasyarat)
-    *   1.9. [Langkah-Langkah Instalasi](#19-langkah-langkah-instalasi)
-    *   1.10. [Konfigurasi Awal](#110-konfigurasi-awal)
-    *   1.11. [Penggunaan Dasar](#111-penggunaan-dasar)
-    *   1.12. [Contoh Penggunaan Sederhana](#112-contoh-penggunaan-sederhana)
-    *   1.13. [Struktur Kode Proyek](#113-struktur-kode-proyek)
-    *   1.14. [Kontribusi](#114-kontribusi)
-    *   1.15. [Lisensi](#115-lisensi)
-    *   1.16. [Ucapan Terima Kasih](#116-ucapan-terima-kasih)
-    *   1.17. [Kontak](#117-kontak)
-    *   1.18. [FAQ (Pertanyaan yang Sering Diajukan)](#118-faq-pertanyaan-yang-sering-diajukan)
-    *   1.19. [Versi Proyek](#119-versi-proyek)
-    *   1.20. [Roadmap Pengembangan](#120-roadmap-pengembangan)
-    *   1.21. [Dokumentasi Tambahan](#121-dokumentasi-tambahan)
-    *   1.22. [Dukungan Komunitas](#122-dukungan-komunitas)
-    *   1.23. [Informasi Hak Cipta](#123-informasi-hak-cipta)
-    *   1.24. [Disclaimer](#124-disclaimer)
-    *   1.25. [Catatan Lainnya](#125-catatan-lainnya)
+    *   1.8. [Struktur Direktori ci4](#18-struktur-direktori-ci4)
+    *   1.9. [Letak Route](#19-letak-route)
+    *   1.10. [Buka PowerShell](#110-buka-powershell)
+    *   1.11. [Akses Route](#111-akses-route)
+    *   1.12. [Membuat Controller](#112-membuat-controller)
+    *   1.13. [Akses Kembali](#113-akses-kembali)
+    *   1.14. [Method Baru](#114-method-baru)
+    *   1.15. [Akses Method Baru](#115-akses-method-baru)
+    *   1.16. [Membuat View](#116-membuat-view)
+    *   1.17. [Ubah Method About](#117-ubah-method-about)
+    *   1.18. [Refresh Halaman](#118-refresh-halaman)
+    *   1.19. [Membuat Layout CSS](#119-membuat-layout-css)
+    *   1.20. [Buat Folder Template](#120-buat-folder-template)
+    *   1.21. [Ubah File About](#121-ubah-file-about)
+    *   1.22. [Refresh Halaman About](#122-refresh-halaman-about)
 
 ---
 
@@ -41,7 +38,7 @@ Aldi Hermansyah - 312310200 - Ti.23.A2
 
 ### 1.1. Aktifkan Extensi
 
-Buka xampp -> apache -> config -> php.ini
+Buka `xampp -> apache -> config -> php.ini`
 
 Hilangkan tanda `;` pada ekstensi yang akan diaktifkan. Kemudian simpan kembali filenya dan restart Apache web server.
 
