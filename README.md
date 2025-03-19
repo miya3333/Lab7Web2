@@ -74,7 +74,7 @@ Arahkan ke direktori project `C:/xampp/htdocs/lab11_ci/ci4`. Codeigniter 4 menye
 
 ### 1.4. Jalankan Perintah
 
-Perintah yang dapat dijalankan untuk memanggil CLI Codeigniter.
+Perintah yang dapat dijalankan untuk memanggil CLI Codeigniter:
 
 ```bash
 php spark
@@ -104,7 +104,7 @@ Fokus pada folder `app`, dimana folder tersebut adalah area kerja untuk membuat 
 
 <img src="file/8.png" width="max-content">
 
-### 1.9. Letak Router
+### 1.9. Letak Route
 
 Router terletak pada file `app/Config/Routes.php`. Tambahkan kode berikut:
 
@@ -116,27 +116,43 @@ $routes->get('/faqs', 'Page::faqs');
 
 <img src="file/9.png" width="max-content">
 
-### 1.10.
+### 1.10. Buka PowerShell
+
+Jalankan perintah:
+
+```bash
+php spark routes
+```
 
 <img src="file/10.png" width="max-content">
 
-### 1.11.
+### 1.11. Akses Route
+
+Coba akses route di browser http://localhost:8080/lab11_ci/ci4/public/about dan lihat apa yang terjadi. Ketika diakses akan muncul tampilan error `404 file not found`, artinya file/page tersebut tidak ada.
 
 <img src="file/11.png" width="max-content">
 
-### 1.12.
+### 1.12. Membuat Controller
+
+Buat file baru dengan nama `Page.php` pada direktori `Controllers` dan isi kodenya:
 
 <img src="file/12.png" width="max-content">
 
-### 1.13.
+### 1.13. Akses Kembali
+
+Refresh kembali browser, maka halaman sudah dapat diakses.
 
 <img src="file/13.png" width="max-content">
 
-### 1.14
+### 1.14 Method Baru
+
+Pada `app/Controllers/Page.php` tambahkan kode berikut:
 
 <img src="file/14.png" width="max-content">
 
-### 1.15.
+### 1.15. Akses Method Baru
+
+Akses dengan alamat http://localhost:8080/lab11_ci/ci4/public/tos
 
 <img src="file/15.png" width="max-content">
 
