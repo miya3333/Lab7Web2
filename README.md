@@ -21,7 +21,7 @@ Akan muncul seperti gambar dibawah. Jika error `The framework needs the followin
 
 ---
 
-[![portfolio](https://img.shields.io/badge/Langkah%201?color=0096D1)](#1-menghilangkan--pada-file-xampp---apache---config---phpini)
+[![Langkah 1](https://img.shields.io/badge/Langkah%201?color=0096D1)](#1-menghilangkan--pada-file-xampp---apache---config---phpini)
 
 
 ### 3. 
