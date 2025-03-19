@@ -10,8 +10,8 @@ Aldi Hermansyah - 312310200 - Ti.23.A2
 
 *   **Praktikum 1** 
     *   1.1. [Aktifkan Extensi](#11-aktifkan-extensi)
-    *   1.2. [Tujuan Proyek](#12-tujuan-proyek)
-    *   1.3. [Ruang Lingkup Proyek](#13-ruang-lingkup-proyek)
+    *   1.2. [Buka Browser](#12-buka-browser)
+    *   1.3. [Buka PowerShell/CMD](#13-buka-powershell/cmd)
     *   1.4. [Target Pengguna](#14-target-pengguna)
     *   1.5. [Fitur Utama](#15-fitur-utama)
     *   1.6. [Teknologi yang Digunakan](#16-teknologi-yang-digunakan)
@@ -170,172 +170,21 @@ Aldi Hermansyah - 312310200 - Ti.23.A2
 
 ---
 
-## Bab 2: Fitur dan Penggunaan Lanjutan
-
-### 2.1. Fitur Tingkat Lanjut 1
-(Jelaskan fitur lanjutan pertama secara detail.)
-
-### 2.2. Fitur Tingkat Lanjut 2
-(Jelaskan fitur lanjutan kedua secara detail.)
-
-### 2.3. Fitur Tingkat Lanjut 3
-(Jelaskan fitur lanjutan ketiga secara detail.)
-
-### 2.4. Fitur Tingkat Lanjut 4
-(Jelaskan fitur lanjutan keempat secara detail.)
-
-### 2.5. Fitur Tingkat Lanjut 5
-(Jelaskan fitur lanjutan kelima secara detail.)
-
-### 2.6. Konfigurasi Lanjutan 1
-(Jelaskan opsi konfigurasi lanjutan pertama.)
-
-### 2.7. Konfigurasi Lanjutan 2
-(Jelaskan opsi konfigurasi lanjutan kedua.)
-
-### 2.8. Konfigurasi Lanjutan 3
-(Jelaskan opsi konfigurasi lanjutan ketiga.)
-
-### 2.9. Contoh Penggunaan Lanjutan 1
-(Berikan contoh skenario penggunaan fitur lanjutan pertama.)
-
-### 2.10. Contoh Penggunaan Lanjutan 2
-(Berikan contoh skenario penggunaan fitur lanjutan kedua.)
-
-### 2.11. Integrasi dengan Sistem Lain 1
-(Jelaskan bagaimana proyek ini dapat berintegrasi dengan sistem lain yang relevan.)
-
-### 2.12. Integrasi dengan Sistem Lain 2
-(Jelaskan integrasi lain dengan sistem yang berbeda.)
-
-### 2.13. API Reference (jika ada) 1
-(Jika proyek memiliki API, jelaskan bagian pertama dari referensinya.)
-
-### 2.14. API Reference (jika ada) 2
-(Lanjutkan penjelasan referensi API.)
-
-### 2.15. Pemecahan Masalah Umum 1
-(Berikan solusi untuk masalah umum pertama yang mungkin dihadapi pengguna.)
-
-### 2.16. Pemecahan Masalah Umum 2
-(Berikan solusi untuk masalah umum kedua.)
-
-### 2.17. Tips dan Trik Penggunaan 1
-(Bagikan tips dan trik berguna untuk menggunakan proyek ini secara efektif.)
-
-### 2.18. Tips dan Trik Penggunaan 2
-(Lanjutkan berbagi tips dan trik.)
-
-### 2.19. Panduan Pengembangan Lebih Lanjut 1
-(Berikan panduan untuk pengembang yang ingin memperluas atau memodifikasi proyek.)
-
-### 2.20. Panduan Pengembangan Lebih Lanjut 2
-(Lanjutkan panduan pengembangan.)
-
-### 2.21. Penyesuaian dan Kustomisasi 1
-(Jelaskan cara menyesuaikan atau mengkustomisasi proyek.)
-
-### 2.22. Penyesuaian dan Kustomisasi 2
-(Lanjutkan penjelasan kustomisasi.)
-
-### 2.23. Skalabilitas Proyek
-(Diskusikan bagaimana proyek ini dapat diskalakan.)
-
-### 2.24. Keamanan Proyek
-(Jelaskan langkah-langkah keamanan yang diterapkan dalam proyek.)
-
-### 2.25. Best Practices
-(Bagikan praktik terbaik untuk menggunakan atau mengembangkan proyek ini.)
-
----
-
-## Bab 3: Pengembangan dan Kontribusi
-
-### 3.1. Lingkungan Pengembangan
-(Jelaskan lingkungan pengembangan yang direkomendasikan.)
-
-### 3.2. Dependencies Pengembangan
-(Sebutkan dependencies yang dibutuhkan untuk pengembangan.)
-
-### 3.3. Setup Lingkungan Pengembangan
-(Jelaskan langkah-langkah untuk menyiapkan lingkungan pengembangan.)
-
-### 3.4. Panduan Gaya Penulisan Kode
-(Sebutkan standar atau gaya penulisan kode yang harus diikuti.)
-
-### 3.5. Proses Pengujian (Unit Test, Integration Test, dll.)
-(Jelaskan jenis pengujian yang ada dan bagaimana cara kerjanya.)
-
-### 3.6. Menjalankan Pengujian
-(Jelaskan cara menjalankan pengujian.)
-
-### 3.7. Membuat Pull Request
-(Panduan langkah demi langkah untuk membuat pull request.)
-
-### 3.8. Alur Kerja Kontribusi
-(Jelaskan alur kerja kontribusi secara keseluruhan.)
-
-### 3.9. Pedoman Kontribusi Kode
-(Pedoman khusus untuk kontribusi kode.)
-
-### 3.10. Pedoman Kontribusi Dokumentasi
-(Pedoman khusus untuk kontribusi dokumentasi.)
-
-### 3.11. Struktur Cabang Repository (Branching Strategy)
-(Jelaskan strategi pencabangan yang digunakan dalam repository.)
-
-### 3.12. Aturan Commit Message
-(Jelaskan format dan aturan untuk pesan commit.)
-
-### 3.13. Proses Code Review
-(Jelaskan bagaimana code review dilakukan.)
-
-### 3.14. Mentoring dan Bimbingan Kontributor
-(Informasi tentang program mentoring atau bimbingan bagi kontributor baru.)
-
-### 3.15. Komunikasi Tim Pengembang
-(Jelaskan saluran komunikasi yang digunakan oleh tim pengembang.)
-
-### 3.16. Rapat dan Diskusi
-(Informasi tentang rapat atau diskusi rutin yang diadakan.)
-
-### 3.17. Pelaporan Bug dan Masalah
-(Jelaskan cara melaporkan bug atau masalah.)
-
-### 3.18. Permintaan Fitur Baru
-(Jelaskan cara mengajukan permintaan fitur baru.)
-
-### 3.19. Daftar Kontributor
-(Anda bisa secara otomatis memperbarui ini atau menyebutkan kontributor utama.)
-
-### 3.20. Penghargaan dan Pengakuan
-(Cara proyek menghargai kontributor.)
-
-### 3.21. Panduan untuk Maintainer
-(Panduan khusus untuk maintainer proyek.)
-
-### 3.22. Proses Rilis Proyek
-(Jelaskan bagaimana rilis proyek dilakukan.)
-
-### 3.23. Manajemen Versi
-(Jelaskan bagaimana proyek melakukan manajemen versi.)
-
-### 3.24. Keamanan dalam Pengembangan
-(Praktik keamanan yang harus diikuti selama pengembangan.)
-
-### 3.25. Rencana Pengembangan Mendatang
-(Rincian lebih lanjut tentang rencana pengembangan di masa depan.)
-
----
+## Praktikum 1
 
 ### 1.1. Aktifkan Extensi
-Pada file xampp -> apache -> config -> php.ini. Hilangkan tanda `;` pada ekstensi yang akan diaktifkan. Kemudian simpan kembali filenya dan restart Apache web server.
+
+Buka xampp -> apache -> config -> php.ini
+
+Hilangkan tanda `;` pada ekstensi yang akan diaktifkan. Kemudian simpan kembali filenya dan restart Apache web server.
 
 <img src="file/1.png" width="max-content">
 
-### 1.2. Ketik http://localhost:8080/lab11_ci/ci4/public/ di browser
+### 1.2. Buka Browser
 
-Akan muncul seperti gambar dibawah.
+Ketik http://localhost:8080/lab11_ci/ci4/public/ di browser. Akan muncul seperti gambar dibawah.
+
+<img src="file/2.png" width="max-content">
 
 Jika error:
 
@@ -350,29 +199,35 @@ before: ;extension=intl
 after: extension=intl
 ```
 
-<img src="file/2.png" width="max-content">
+### 1.3. Buka PowerShell/CMD
 
-### 1.3. Di PowerShell/CMD arahkan ke direktori project `C:/xampp/htdocs/lab11_ci/ci4`
-
-Codeigniter 4 menyediakan CLI untuk mempermudah proses development.
+Arahkan ke direktori project `C:/xampp/htdocs/lab11_ci/ci4`. Codeigniter 4 menyediakan CLI untuk mempermudah proses development.
 
 <img src="file/3.png" width="max-content">
 
-### 1.4. Jalankan perintah `php spark`
+### 1.4. Jalankan Perintah
 
 Perintah yang dapat dijalankan untuk memanggil CLI Codeigniter.
 
+```bash
+php spark
+```
+
 <img src="file/4.png" width="max-content">
 
-### 1.5. Ubah nama file `env` menjadi `.env` dan mengubah nilai variabel `CI_ENVIRONTMENT` menjadi `development`
+### 1.5. Ubah Nama File
+
+File `env` menjadi `.env` dan mengubah nilai variabel `CI_ENVIRONTMENT` menjadi `development`
 
 <img src="file/5.png" width="max-content">
 
-### 1.6.
+### 1.6. Contoh Error
 
 <img src="file/6.png" width="max-content">
 
-### 1.7.
+### 1.7. Mencoba Error
+
+Untuk mencoba error diatas, ubah kode pada file `app/Controllers/Home.php`, hilangkan `;` pada akhir kode.
 
 <img src="file/7.png" width="max-content">
 
