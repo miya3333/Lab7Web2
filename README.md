@@ -264,31 +264,111 @@ public function about()
 
 ---
 
-### 1.18.
+### 1.18. Refresh Halaman
 
 <img src="file/18.png" width="max-content">
 
 ---
 
-### 1.19.
+### 1.19. Membuat Layout CSS
+
+Buat file `style.css` pada direktori `public`. Pada praktikum `lab4_layout` CSS sudah pernah dibuat, copy saja filenya ke direktori `public`.
 
 <img src="file/19.png" width="max-content">
 
 ---
 
-### 1.20.
+### 1.20. Buat Folder Template
+
+Pada direktori `Views` buat folder `template`. Kemudia buat file `header.php`:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title><?= $title; ?></title>
+    <link rel="stylesheet" href="<?= base_url('/style.css'); ?>">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Layout Sederhana</h1>
+        </header>
+        <nav>
+            <a href="<?= base_url('/'); ?>" class="active">Home</a>
+            <a href="<?= base_url('/artikel'); ?>">Artikel</a>
+            <a href="<?= base_url('/about'); ?>">About</a>
+            <a href="<?= base_url('/contact'); ?>">Kontak</a>
+        </nav>
+        <section id="wrapper">
+            <section id="main">
+```
+
+dan `footer.php`:
+
+```html
+         </section>
+            <aside id="sidebar">
+                <div class="widget-box">
+                    <h3 class="title">Widget Header</h3>
+                    <ul>
+                        <li><a href="#">Widget Link</a></li>
+                        <li><a href="#">Widget Link</a></li>
+                    </ul>
+                </div>
+                <div class="widget-box">
+                    <h3 class="title">Widget Text</h3>
+                    <p>
+                        Vestibulum lorem elit, iaculis in nisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla, vestibulum mi porta,faucibus felis. Integer pharetra est nunc, nec pretium nunc pretium ac.
+                    </p>
+                </div>
+            </aside>
+        </section>
+        <footer>
+            <p>&copy; 2021 - Universitas Pelita Bangsa</p>
+        </footer>
+    </div>
+</body>
+
+</html>
+```
 
 <img src="file/20.png" width="max-content">
 
 ---
 
-### 1.21.
+### 1.21. Ubah File About
+
+Ubah file `app/Views/about.php` dari:
+
+```php
+<h1><?= $title; ?></h1>
+<hr>
+<p><?= $content; ?></p>
+```
+
+menjadi:
+
+```php
+<?= $this->include('template/header'); ?>
+
+<h1><?= $title; ?></h1>
+<hr>
+<p><?= $content; ?></p>
+
+<?= $this->include('template/footer'); ?>
+```
 
 <img src="file/21.png" width="max-content">
 
 ---
 
-### 1.22.
+### 1.22. Refresh Halaman About
+
+Refresh tampilan pada alamat http://localhost:8080/lab11_ci/ci4/public/about
 
 <img src="file/22.png" width="max-content">
 
