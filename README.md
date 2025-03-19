@@ -11,7 +11,7 @@ Aldi Hermansyah - 312310200 - Ti.23.A2
 *   **Praktikum 1** 
     *   1.1. [Aktifkan Extensi](#11-aktifkan-extensi)
     *   1.2. [Buka Browser](#12-buka-browser)
-    *   1.3. [Buka PowerShell/CMD](#13-buka-powershell-cmd)
+    *   1.3. [Buka PowerShell/CMD](#13-buka-powershell-atau-cmd)
     *   1.4. [Target Pengguna](#14-target-pengguna)
     *   1.5. [Fitur Utama](#15-fitur-utama)
     *   1.6. [Teknologi yang Digunakan](#16-teknologi-yang-digunakan)
@@ -199,7 +199,7 @@ before: ;extension=intl
 after: extension=intl
 ```
 
-### 1.3. Buka PowerShell/CMD
+### 1.3. Buka PowerShell atau CMD
 
 Arahkan ke direktori project `C:/xampp/htdocs/lab11_ci/ci4`. Codeigniter 4 menyediakan CLI untuk mempermudah proses development.
 
