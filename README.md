@@ -1,22 +1,16 @@
-# Praktikum 1 Pemrograman Web 2
+# Praktikum 1-3 Pemrograman Web 2
 
 ```bash
 Aldi Hermansyah - 312310200 - Ti.23.A2
 ```
 
-> Langkah-langkah praktikum 
+
 
 ---
 
-# Nama Proyek Anda
+## Daftar Praktikum
 
-Deskripsi singkat proyek Anda di sini.
-
----
-
-## Daftar Isi
-
-*   **Bab 1: Pengantar**
+*   **Praktikum 1** 
     *   1.1. [Latar Belakang Proyek](#11-latar-belakang-proyek)
     *   1.2. [Tujuan Proyek](#12-tujuan-proyek)
     *   1.3. [Ruang Lingkup Proyek](#13-ruang-lingkup-proyek)
@@ -336,7 +330,7 @@ Deskripsi singkat proyek Anda di sini.
 
 ---
 
-## 1. Menghilangkan ; pada file xampp -> apache -> config -> php.ini
+### 1.1 Menghilangkan ; pada file xampp -> apache -> config -> php.ini
 
 Hilangkan tanda `;` pada ekstensi yang akan diaktifkan. Kemudian simpan kembali filenya dan restart Apache web server.
 
