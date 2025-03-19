@@ -4,14 +4,12 @@
 Aldi Hermansyah - 312310200 - Ti.23.A2
 ```
 
-
-
 ---
 
 ## Daftar Praktikum
 
 *   **Praktikum 1** 
-    *   1.1. [Latar Belakang Proyek](#11-latar-belakang-proyek)
+    *   1.1. [Aktifkan Extensi](#11-aktifkan-extensi)
     *   1.2. [Tujuan Proyek](#12-tujuan-proyek)
     *   1.3. [Ruang Lingkup Proyek](#13-ruang-lingkup-proyek)
     *   1.4. [Target Pengguna](#14-target-pengguna)
@@ -330,15 +328,12 @@ Aldi Hermansyah - 312310200 - Ti.23.A2
 
 ---
 
-### 1.1 Menghilangkan ; pada file xampp -> apache -> config -> php.ini
-
-Hilangkan tanda `;` pada ekstensi yang akan diaktifkan. Kemudian simpan kembali filenya dan restart Apache web server.
+### 1.1. Aktifkan Extensi
+Pada file xampp -> apache -> config -> php.ini. Hilangkan tanda `;` pada ekstensi yang akan diaktifkan. Kemudian simpan kembali filenya dan restart Apache web server.
 
 <img src="file/1.png" width="max-content">
 
----
-
-## 2. Ketik http://localhost:8080/lab11_ci/ci4/public/ di browser
+### 1.2. Ketik http://localhost:8080/lab11_ci/ci4/public/ di browser
 
 Akan muncul seperti gambar dibawah.
 
@@ -357,127 +352,87 @@ after: extension=intl
 
 <img src="file/2.png" width="max-content">
 
----
-
-## 3. Di PowerShell/CMD arahkan ke direktori project `C:/xampp/htdocs/lab11_ci/ci4`
+### 1.3. Di PowerShell/CMD arahkan ke direktori project `C:/xampp/htdocs/lab11_ci/ci4`
 
 Codeigniter 4 menyediakan CLI untuk mempermudah proses development.
 
 <img src="file/3.png" width="max-content">
 
----
-
-## 4. Jalankan perintah `php spark`
+### 1.4. Jalankan perintah `php spark`
 
 Perintah yang dapat dijalankan untuk memanggil CLI Codeigniter.
 
 <img src="file/4.png" width="max-content">
 
----
-
-## 5. Ubah nama file `env` menjadi `.env` dan mengubah nilai variabel `CI_ENVIRONTMENT` menjadi `development`
+### 1.5. Ubah nama file `env` menjadi `.env` dan mengubah nilai variabel `CI_ENVIRONTMENT` menjadi `development`
 
 <img src="file/5.png" width="max-content">
 
----
-
-## 6. 
+### 1.6.
 
 <img src="file/6.png" width="max-content">
 
----
-
-## 7. 
+### 1.7.
 
 <img src="file/7.png" width="max-content">
 
----
-
-## 8. 
+### 1.8.
 
 <img src="file/8.png" width="max-content">
 
----
-
-## 9. 
+### 1.9.
 
 <img src="file/9.png" width="max-content">
 
----
-
-## 10. 
+### 1.10.
 
 <img src="file/10.png" width="max-content">
 
----
-
-## 11. 
+### 1.11.
 
 <img src="file/11.png" width="max-content">
 
----
-
-## 12. 
+### 1.12.
 
 <img src="file/12.png" width="max-content">
 
----
-
-## 13. 
+### 1.13.
 
 <img src="file/13.png" width="max-content">
 
----
-
-## 14. 
+### 1.14
 
 <img src="file/14.png" width="max-content">
 
----
-
-## 15. 
+### 1.15.
 
 <img src="file/15.png" width="max-content">
 
----
-
-## 16. 
+### 1.16.
 
 <img src="file/16.png" width="max-content">
 
----
-
-## 17. 
+### 1.17.
 
 <img src="file/17.png" width="max-content">
 
----
-
-## 18. 
+### 1.18.
 
 <img src="file/18.png" width="max-content">
 
----
-
-## 19. 
+### 1.19.
 
 <img src="file/19.png" width="max-content">
 
----
-
-## 20. 
+### 1.20.
 
 <img src="file/20.png" width="max-content">
 
----
-
-## 21. 
+### 1.21.
 
 <img src="file/21.png" width="max-content">
 
----
-
-## 22. 
+### 1.22.
 
 <img src="file/22.png" width="max-content">
 
