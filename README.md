@@ -8,7 +8,7 @@ Aldi Hermansyah - 312310200 - Ti.23.A2
 
 ## Daftar Praktikum
 
-*   **Praktikum 1** 
+*   **[Praktikum 1](#praktikum-1)**
     *   1.1. [Aktifkan Extensi](#11-aktifkan-extensi)
     *   1.2. [Buka Browser](#12-buka-browser)
     *   1.3. [Buka PowerShell atau CMD](#13-buka-powershell-atau-cmd)
