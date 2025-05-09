@@ -6,83 +6,18 @@ Aldi Hermansyah - 312310200 - Ti.23.A2
 
 ---
 
-## Daftar Praktikum
+# Daftar Praktikum
 
 *   **[Praktikum 1](#praktikum-1)**
-    *   1.1. [Aktifkan Extensi](#11-aktifkan-extensi)
-    *   1.2. [Buka Browser](#12-buka-browser)
-    *   1.3. [Buka PowerShell atau CMD](#13-buka-powershell-atau-cmd)
-    *   1.4. [Jalankan Perintah](#14-jalankan-perintah)
-    *   1.5. [Ubah Nama File](#15-ubah-nama-file)
-    *   1.6. [Contoh Error](#16-contoh-error)
-    *   1.7. [Menccoba Error](#17-mencoba-error)
-    *   1.8. [Struktur Direktori ci4](#18-struktur-direktori-ci4)
-    *   1.9. [Letak Route](#19-letak-route)
-    *   1.10. [Buka PowerShell](#110-buka-powershell)
-    *   1.11. [Akses Route](#111-akses-route)
-    *   1.12. [Membuat Controller](#112-membuat-controller)
-    *   1.13. [Akses Kembali](#113-akses-kembali)
-    *   1.14. [Method Baru](#114-method-baru)
-    *   1.15. [Akses Method Baru](#115-akses-method-baru)
-    *   1.16. [Membuat View](#116-membuat-view)
-    *   1.17. [Ubah Method About](#117-ubah-method-about)
-    *   1.18. [Refresh Halaman](#118-refresh-halaman)
-    *   1.19. [Membuat Layout CSS](#119-membuat-layout-css)
-    *   1.20. [Buat Folder Template](#120-buat-folder-template)
-    *   1.21. [Ubah File About](#121-ubah-file-about)
-    *   1.22. [Refresh Halaman About](#122-refresh-halaman-about)
-
-*   **Praktikum 2** `(dalam pengembangan)`
-    *   2.1. [](#21-aktifkan-extensi)
-    *   2.2. [](#22-buka-browser)
-    *   2.3. [](#23-buka-powershell-atau-cmd)
-    *   2.4. [](#24-jalankan-perintah)
-    *   2.5. [](#25-ubah-nama-file)
-    *   2.6. [](#26-contoh-error)
-    *   2.7. [](#27-mencoba-error)
-    *   2.8. [](#28-struktur-direktori-ci4)
-    *   2.9. [](#29-letak-route)
-    *   2.10. [](#210-buka-powershell)
-    *   2.11. [](#211-akses-route)
-    *   2.12. [](#212-membuat-controller)
-    *   2.13. [](#213-akses-kembali)
-    *   2.14. [](#214-method-baru)
-    *   2.15. [](#215-akses-method-baru)
-    *   2.16. [](#216-membuat-view)
-    *   2.17. [](#217-ubah-method-about)
-    *   2.18. [](#218-refresh-halaman)
-    *   2.19. [](#219-membuat-layout-css)
-    *   2.20. [](#220-buat-folder-template)
-    *   2.21. [](#221-ubah-file-about)
-    *   2.22. [](#222-refresh-halaman-about)
-
-*   **Praktikum 3** `(dalam pengembangan)`
-    *   3.1. [](#31-aktifkan-extensi)
-    *   3.2. [](#32-buka-browser)
-    *   3.3. [](#33-buka-powershell-atau-cmd)
-    *   3.4. [](#34-jalankan-perintah)
-    *   3.5. [](#35-ubah-nama-file)
-    *   3.6. [](#36-contoh-error)
-    *   3.7. [](#37-mencoba-error)
-    *   3.8. [](#38-struktur-direktori-ci4)
-    *   3.9. [](#39-letak-route)
-    *   3.10. [](#310-buka-powershell)
-    *   3.11. [](#311-akses-route)
-    *   3.12. [](#312-membuat-controller)
-    *   3.13. [](#313-akses-kembali)
-    *   3.14. [](#314-method-baru)
-    *   3.15. [](#315-akses-method-baru)
-    *   3.16. [](#316-membuat-view)
-    *   3.17. [](#317-ubah-method-about)
-    *   3.18. [](#318-refresh-halaman)
-    *   3.19. [](#319-membuat-layout-css)
-    *   3.20. [](#320-buat-folder-template)
-    *   3.21. [](#321-ubah-file-about)
-    *   3.22. [](#322-refresh-halaman-about)
+*   **[Praktikum 2](#praktikum-2)**
+*   **[Praktikum 3](#praktikum-3)**
+*   **[Praktikum 4](#praktikum-4)**
+*   **[Praktikum 5](#praktikum-5)**
+*   **[Praktikum 6](#praktikum-6)**
 
 ---
 
-## Praktikum 1
+# Praktikum 1
 
 ### 1.1. Aktifkan Extensi
 
@@ -416,5 +351,25 @@ menjadi:
 Refresh tampilan pada alamat http://localhost:8080/lab11_ci/ci4/public/about
 
 <img src="file/22.png" width="max-content">
+
+---
+
+# Praktikum 2
+
+---
+
+# Praktikum 3
+
+---
+
+# Praktikum 4
+
+---
+
+# Praktikum 5
+
+---
+
+# Praktikum 6
 
 ---
