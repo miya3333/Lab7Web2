@@ -1,4 +1,4 @@
-# Praktikum 1-3 Pemrograman Web 2
+# Praktikum 1-9 Pemrograman Web 2
 
 ```bash
 Aldi Hermansyah - 312310200 - Ti.23.A2
@@ -14,6 +14,9 @@ Aldi Hermansyah - 312310200 - Ti.23.A2
 *   **[Praktikum 4](#praktikum-4)**
 *   **[Praktikum 5](#praktikum-5)**
 *   **[Praktikum 6](#praktikum-6)**
+*   **[Praktikum 7](#praktikum-7)**
+*   **[Praktikum 8](#praktikum-8)**
+*   **[Praktikum 9](#praktikum-9)**
 
 ---
 
