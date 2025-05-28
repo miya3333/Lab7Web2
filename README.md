@@ -376,3 +376,15 @@ Refresh tampilan pada alamat http://localhost:8080/lab11_ci/ci4/public/about
 # Praktikum 6
 
 ---
+
+# Praktikum 7
+
+---
+
+# Praktikum 8
+
+---
+
+# Praktikum 9
+
+---
