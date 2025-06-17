@@ -801,7 +801,12 @@ Buat folder `components` di dalam `app/Views` dan buat file `artikel_terkini.php
 </ul>
 ```
 
-<img src="file/3-1.png" width="max-content">
+Pertanyan dan Tugas
+* Sesuaikan data dengan praktikum sebelumnya, perlu melakukan perubahan field pada database dengan menambahkan tanggal agar dapat mengambil data artikel terbaru.
+* Selesaikan programnya sesuai langkah-langkah yang ada. Anda boleh melakukan improvisasi.
+* Apa manfaat utama dari penggunaan View Layout dalam pengembangan aplikasi?
+* Jelaskan perbedaan antara View Cell dan View biasa.
+* Ubah View Cell agar hanya menampilkan post dengan kategori tertentu.
 
 ---
 
