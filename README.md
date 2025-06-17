@@ -395,13 +395,51 @@ Refresh tampilan pada alamat http://localhost:8080/lab11_ci/ci4/public/about
 
 ---
 
-### 2.7. Refresh kembali `http://localhost:8080/lab11_ci/ci4/public/artikel`
+### 2.7. Tambahkan data pada Database
+
+```sql
+INSERT INTO artikel (judul, isi, slug) VALUE
+   ('Artikel pertama', 'Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf.', 'artikel-pertama'),
+   ('Artikel kedua', 'Tidak seperti anggapan banyak orang, Lorem Ipsum bukanlah teks-teks yang diacak. Ia berakar dari sebuah naskah sastra latin klasik dari era 45 sebelum masehi, hingga bisa dipastikan usianya telah mencapai lebih dari 2000 tahun.', 'artikel-kedua')
+;
+```
+
+Refresh kembali `http://localhost:8080/lab11_ci/ci4/public/artikel`
 
 <img src="file/2_7.png" width="max-content">
 
 ---
 
 ### 2.8. Buat Artikel Detail
+
+Tambahkan fungsi baru pada `Controllers/Artikel.php`:
+```php
+public function view($slug)
+{
+   $model = new ArtikelModel();
+   $artikel = $model->where([
+      'slug' => $slug
+   ])->first();
+           
+   // Menampilkan error apabila data tidak ada.
+   if (!$artikel) {
+      throw PageNotFoundException::forPageNotFound();
+   }
+   $title = $artikel['judul'];
+   return view('artikel/detail', compact('artikel', 'title'));
+}
+```
+
+Buat view baru `app/Views/detail.php`
+```php
+<?= $this->include('template/header'); ?>
+<article class="entry">
+    <h2><?= $artikel['judul']; ?></h2>
+    <!-- <img src="<?= base_url('/gambar/' . $artikel['gambar']); ?>" alt="<?= $artikel['judul']; ?>"> -->
+    <p><?= $artikel['isi']; ?></p>
+</article>
+<?= $this->include('template/footer'); ?>
+```
 
 <img src="file/2_8.png" width="max-content">
 
