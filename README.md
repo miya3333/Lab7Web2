@@ -361,11 +361,27 @@ Refresh tampilan pada alamat http://localhost:8080/lab11_ci/ci4/public/about
 
 ### 2.1. Buat Database
 
+```sql
+CREATE DATABASE lab_ci4;
+```
+
 <img src="file/2_1.png" width="max-content">
 
 ---
 
 ### 2.2. Buat Tabel
+
+```sql
+CREATE TABLE artikel (
+   id INT(11) auto_increment,
+   judul VARCHAR(200) NOT NULL,
+   isi TEXT,
+   gambar VARCHAR(200),
+   status TINYINT(1) DEFAULT 0,
+   slug VARCHAR(200),
+   PRIMARY KEY(id)
+);
+```
 
 <img src="file/2_2.png" width="max-content">
 
@@ -373,11 +389,31 @@ Refresh tampilan pada alamat http://localhost:8080/lab11_ci/ci4/public/about
 
 ### 2.3. Konfigurasi Menghubungkan Database Server
 
+Ada dua cara:
+1. pada file `app/Config/Database.php`
+2. menggunakan file `.env`
+
 <img src="file/2_3.png" width="max-content">
 
 ---
 
 ### 2.4. Buat File `ArtikelModel.php`
+
+Code:
+```php
+<?php
+namespace App\Models;
+
+use CodeIgniter\Model;
+
+class ArtikelModel extends Model
+{
+   protected $table = 'artikel';
+   protected $primaryKey = 'id';
+   protected $useAutoIncrement = true;
+   protected $allowedFields = ['judul', 'isi', 'status', 'slug', 'gambar'];
+}
+```
 
 <img src="file/2_4.png" width="max-content">
 
@@ -385,11 +421,56 @@ Refresh tampilan pada alamat http://localhost:8080/lab11_ci/ci4/public/about
 
 ### 2.5. Buat File `Artikel.php`
 
+Code:
+```php
+<?php
+
+namespace App\Controllers;
+
+use App\Models\ArtikelModel;
+
+class Artikel extends BaseController
+{
+	public function index()
+	{
+		$title = 'Daftar Artikel';
+		$model = new ArtikelModel();
+		$artikel = $model->findAll();
+		return view('artikel/index', compact('artikel', 'title'));
+	}
+}
+```
+
 <img src="file/2_5.png" width="max-content">
 
 ---
 
 ### 2.6. Akses `http://localhost:8080/lab11_ci/ci4/public/artikel`
+
+Buat direktori baru `artikel` pada `App/Views` dan buat file baru `index.php`
+```php
+<?= $this->include('template/header'); ?>
+
+<?php if ($artikel): foreach ($artikel as $row): ?>
+        <article class="entry">
+            <h2>
+                <a href="<?= base_url('/artikel/' . $row['slug']); ?>">
+                    <?= $row['judul']; ?>
+                </a>
+            </h2>
+            <p><?= substr($row['isi'], 0, 200); ?></p>
+        </article>
+        <hr class="divider" />
+    <?php endforeach;
+else: ?>
+    <article class="entry">
+        <h2>Belum ada data.</h2>
+    </article>
+<?php endif; ?>
+
+<?= $this->include('template/footer');
+
+```
 
 <img src="file/2_6.png" width="max-content">
 
@@ -410,7 +491,7 @@ Refresh kembali `http://localhost:8080/lab11_ci/ci4/public/artikel`
 
 ---
 
-### 2.8. Buat Artikel Detail
+### 2.8. Buat Detail Artikel
 
 Tambahkan fungsi baru pada `Controllers/Artikel.php`:
 ```php
@@ -441,25 +522,181 @@ Buat view baru `app/Views/detail.php`
 <?= $this->include('template/footer'); ?>
 ```
 
+Buka `app/Config/Routes.php` dan tambahkan:
+```php
+$routes->get('/artikel/(:any)', 'Artikel::view/$1');
+```
+
 <img src="file/2_8.png" width="max-content">
 
 ---
 
-### 2.9. Akses `http://localhost:8080/lab11_ci/ci4/public/admin/artikel`
+### 2.9. Buat Menu Admin
+
+Untuk proses CRUD data artikel. Buat method pada `Controllers/Artikel.php`:
+```php
+public function admin_index()
+{
+	$title = 'Daftar Artikel';
+	$model = new ArtikelModel();
+	$artikel = $model->findAll();
+	return view('artikel/admin_index', compact('artikel', 'title'));
+}
+```
+
+Buat view untuk tampilan admin `admin_index.php`:
+```php
+<?= $this->include('template/admin_header'); ?>
+<div class="content-artikel">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Judul</th>
+                <th>Status</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php if ($artikel): foreach ($artikel as $row): ?>
+                    <tr>
+                        <td><?= $row['id']; ?></td>
+                        <td>
+                            <b><?= $row['judul']; ?></b>
+                            <p><small><?= substr($row['isi'], 0, 50); ?></small></p>
+                        </td>
+                        <td><?= $row['status']; ?></td>
+                        <td>
+                            <a class="btn btn-edit" href="<?= base_url('/admin/artikel/edit/' . $row['id']); ?>">Ubah</a>
+                            <a class="btn btn-danger" onclick="return confirm('Yakin menghapus data?');"
+                                href="<?= base_url('/admin/artikel/delete/' . $row['id']); ?>">Hapus</a>
+                        </td>
+                    </tr>
+                <?php endforeach;
+            else: ?>
+                <tr>
+                    <td colspan="4">Belum ada data.</td>
+                </tr>
+            <?php endif; ?>
+        </tbody>
+    </table>
+</div>
+<?= $this->include('template/admin_footer'); ?>
+```
+
+Tambahkan pada `app/Config/Routes.php`:
+```php
+$routes->group('admin', function ($routes) {
+    $routes->get('artikel', 'Artikel::admin_index');
+    $routes->add('artikel/add', 'Artikel::add');
+    $routes->add('artikel/edit/(:any)', 'Artikel::edit/$1');
+    $routes->get('artikel/delete/(:any)', 'Artikel::delete/$1');
+});
+```
+
+Akses `http://localhost:8080/lab11_ci/ci4/public/admin/artikel`
 
 <img src="file/2_11.png" width="max-content">
 
 ---
 
-### 2.10. Menambahkan `form_add.php`
+### 2.10. Menambahkan Data Artikel
+
+Tambahkan fungsi baru `add()` pada `Controllers/Artikel.php`:
+```php
+public function add()
+{
+    // validasi data.
+    $validation = \Config\Services::validation();
+    $validation->setRules(['judul' => 'required']);
+    $isDataValid = $validation->withRequest($this->request)->run();
+    if ($isDataValid) {
+        $artikel = new ArtikelModel();
+        $artikel->insert([
+            'judul' => $this->request->getPost('judul'),
+            'isi' => $this->request->getPost('isi'),
+            'slug' => url_title($this->request->getPost('judul')),
+        ]);
+        return redirect('admin/artikel');
+    }
+    $title = "Tambah Artikel";
+    return view('artikel/form_add', compact('title'));
+}
+```
+
+Buat view `form_add.php`:
+```php
+<?= $this->include('template/admin_header'); ?>
+<h2><?= $title; ?></h2>
+<form action="" method="post">
+    <p>
+        <input type="text" name="judul">
+    </p>
+    <p>
+        <textarea name="isi" cols="50" rows="10"></textarea>
+    </p>
+    <p><input type="submit" value="Kirim" class="btn btn-large"></p>
+</form>
+<?= $this->include('template/admin_footer'); ?>
+```
+
 
 <img src="file/2_9.png" width="max-content">
 
 ---
 
-### 2.11. Menambahkan `form_edit.php`
+### 2.11. Mengubah Data
+
+Tambahkan fungsi baru `edit()` pada `Controllers/Artikel.php`:
+```php
+public function edit($id)
+{
+    $artikel = new ArtikelModel();
+    // validasi data.
+    $validation = \Config\Services::validation();
+    $validation->setRules(['judul' => 'required']);
+    $isDataValid = $validation->withRequest($this->request)->run();
+    if ($isDataValid) {
+        $artikel->update($id, [
+            'judul' => $this->request->getPost('judul'),
+            'isi' => $this->request->getPost('isi'),
+        ]);
+        return redirect('admin/artikel');
+    }
+    // ambil data lama
+    $data = $artikel->where('id', $id)->first();
+    $title = "Edit Artikel";
+    return view('artikel/form_edit', compact('title', 'data'));
+}
+```
+
+Buat view `form_edit.php`:
+```php
+<?= $this->include('template/admin_header'); ?>
+<h2><?= $title; ?></h2>
+<form action="" method="post">
+    <p>
+        <input type="text" name="judul" value="<?= $data['judul']; ?>">
+    </p>
+    <p>
+        <textarea name="isi" cols="50" rows="10"><?= $data['isi']; ?></textarea>
+    </p>
+    <p><input type="submit" value="Kirim" class="btn btn-large"></p>
+</form>
+<?= $this->include('template/admin_footer'); ?>
+```
 
 <img src="file/3_0.png" width="max-content">
+
+Tambahkan fungsi baru `delete()` pada `Controllers/Artikel.php`:
+```php
+public function delete($id)
+{
+    $artikel = new ArtikelModel();
+    $artikel->delete($id);
+    return redirect('admin/artikel');
+}
+```
 
 ---
 
