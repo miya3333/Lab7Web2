@@ -413,7 +413,13 @@ Refresh tampilan pada alamat http://localhost:8080/lab11_ci/ci4/public/about
 
 ---
 
-### 2.10. Refresh kembali `http://localhost:8080/lab11_ci/ci4/public/artikel`
+### 2.10. Menambahkan `form_add.php`
+
+<img src="file/2_9.png" width="max-content">
+
+---
+
+### 2.11. Menambahkan `form_edit.php`
 
 <img src="file/3_0.png" width="max-content">
 
