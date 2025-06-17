@@ -12,7 +12,7 @@ Aldi Hermansyah - 312310200 - Ti.23.A2
 ---
 
 # Praktikum 1
-**[Kembali](#daftar-praktikum)**
+**[Kembali Ke Atas ⬆️](#daftar-praktikum)**
 
 ### 1.1. Aktifkan Extensi
 
@@ -350,6 +350,7 @@ Refresh tampilan pada alamat http://localhost:8080/lab11_ci/ci4/public/about
 ---
 
 # Praktikum 2
+**[Kembali Ke Atas ⬆️](#daftar-praktikum)**
 
 ### 2.1. Buat Database
 
@@ -693,6 +694,7 @@ public function delete($id)
 ---
 
 # Praktikum 3
+**[Kembali Ke Atas ⬆️](#daftar-praktikum)**
 
 ### 3.1. Buat Layout Utama
 
@@ -804,25 +806,41 @@ Buat folder `components` di dalam `app/Views` dan buat file `artikel_terkini.php
 ---
 
 # Praktikum 4
+**[Kembali Ke Atas ⬆️](#daftar-praktikum)**
 
 ---
 
 # Praktikum 5
+**[Kembali Ke Atas ⬆️](#daftar-praktikum)**
 
 ---
 
 # Praktikum 6
+**[Kembali Ke Atas ⬆️](#daftar-praktikum)**
 
 ---
 
 # Praktikum 7
+**[Kembali Ke Atas ⬆️](#daftar-praktikum)**
 
 ---
 
 # Praktikum 8
+**[Kembali Ke Atas ⬆️](#daftar-praktikum)**
 
 ---
 
 # Praktikum 9
+**[Kembali Ke Atas ⬆️](#daftar-praktikum)**
+
+---
+
+# Praktikum 10
+**[Kembali Ke Atas ⬆️](#daftar-praktikum)**
+
+---
+
+# Praktikum 11
+**[Kembali Ke Atas ⬆️](#daftar-praktikum)**
 
 ---
