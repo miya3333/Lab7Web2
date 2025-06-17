@@ -12,6 +12,7 @@ Aldi Hermansyah - 312310200 - Ti.23.A2
 ---
 
 # Praktikum 1
+**[Kembali](#daftar-praktikum)**
 
 ### 1.1. Aktifkan Extensi
 
