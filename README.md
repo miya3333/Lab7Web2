@@ -377,9 +377,45 @@ Refresh tampilan pada alamat http://localhost:8080/lab11_ci/ci4/public/about
 
 ---
 
-### 2.4. 
+### 2.4. Buat File `ArtikelModel.php`
 
 <img src="file/2_4.png" width="max-content">
+
+---
+
+### 2.5. Buat File `Artikel.php`
+
+<img src="file/2_5.png" width="max-content">
+
+---
+
+### 2.6. Akses `http://localhost:8080/lab11_ci/ci4/public/artikel`
+
+<img src="file/2_6.png" width="max-content">
+
+---
+
+### 2.7. Refresh kembali `http://localhost:8080/lab11_ci/ci4/public/artikel`
+
+<img src="file/2_7.png" width="max-content">
+
+---
+
+### 2.8. Buat Artikel Detail
+
+<img src="file/2_8.png" width="max-content">
+
+---
+
+### 2.9. Akses `http://localhost:8080/lab11_ci/ci4/public/admin/artikel`
+
+<img src="file/2_11.png" width="max-content">
+
+---
+
+### 2.10. Refresh kembali `http://localhost:8080/lab11_ci/ci4/public/artikel`
+
+<img src="file/3_0.png" width="max-content">
 
 ---
 
