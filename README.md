@@ -359,6 +359,28 @@ Refresh tampilan pada alamat http://localhost:8080/lab11_ci/ci4/public/about
 
 # Praktikum 2
 
+### 2.1. Buat Database
+
+<img src="file/2_1.png" width="max-content">
+
+---
+
+### 2.2. Buat Tabel
+
+<img src="file/2_2.png" width="max-content">
+
+---
+
+### 2.3. Konfigurasi Menghubungkan Database Server
+
+<img src="file/2_3.png" width="max-content">
+
+---
+
+### 2.4. 
+
+<img src="file/2_4.png" width="max-content">
+
 ---
 
 # Praktikum 3
