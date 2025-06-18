@@ -1011,7 +1011,52 @@ php spark db:seed UserSeeder
 
 ### 4.6. Uji Coba Login
 
+Akses http://localhost:8080/lab11_ci/ci4/public/index.php/user/login
+
+<img src="file/4_2.png" width="max-content">
+
 ### 4.7. Tambahkan Auth Filter
+
+Buat file `Auth.php` pada direktori `app/Filters`:
+```php
+<?php
+
+namespace App\Filters;
+
+use CodeIgniter\HTTP\RequestInterface;
+use CodeIgniter\HTTP\ResponseInterface;
+use CodeIgniter\Filters\FilterInterface;
+
+class Auth implements FilterInterface
+{
+    public function before(RequestInterface $request, $arguments = null)
+    {
+        // jika user belum login
+        if (! session()->get('logged_in')) {
+            // maka redirct ke halaman login
+            return redirect()->to('/user/login');
+        }
+    }
+    public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
+    {
+        // Do something here
+    }
+}
+```
+
+Buka file `app/Config/Filters.php` tambahkan:
+```php
+'auth'          => Auth::class,
+```
+
+<img src="file/4_3.png" width="max-content">
+
+Selanjutnya buka file `app/Config/Routes.php` dan sesuaikan kodenya:
+```php
+
+```
+
+<img src="file/4_4.png" width="max-content">
 
 ### 4.8. Percobaan Akses Menu Admin
 
