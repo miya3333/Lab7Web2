@@ -801,11 +801,35 @@ Buat folder `components` di dalam `app/Views` dan buat file `artikel_terkini.php
 </ul>
 ```
 
-Pertanyan dan Tugas
+---
+
+Pertanyan dan Tugas Praktikum 3
 * Sesuaikan data dengan praktikum sebelumnya, perlu melakukan perubahan field pada database dengan menambahkan tanggal agar dapat mengambil data artikel terbaru.
+
+<img src="file/jawab_3_1.png" width="max-content">
+
 * Selesaikan programnya sesuai langkah-langkah yang ada. Anda boleh melakukan improvisasi.
+
+<img src="file/jawab_3_2.png" width="max-content">
+
 * Apa manfaat utama dari penggunaan View Layout dalam pengembangan aplikasi?
+
+**Jawab:**
+
+> Memisahkan bagian-bagian seperti header, footer, dan sidebar dari konten utama. <br>
+> Tidak perlu menulis ulang struktur HTML yang sama di setiap halaman. <br>
+> Semua halaman memiliki layout yang seragam. <br>
+> Perubahan di satu file layout akan otomatis berdampak ke semua halaman yang menggunakannya.
+
 * Jelaskan perbedaan antara View Cell dan View biasa.
+
+> | Aspek            | View Cell                                                                 | View Biasa                                          |
+> |------------------|---------------------------------------------------------------------------|-----------------------------------------------------|
+> | **Fungsi**        | Memanggil _view_ dari method di dalam class, biasanya untuk widget kecil | Menampilkan file view secara langsung               |
+> | **Lokasi Logika** | Logika dan data disiapkan dalam class callable                            | Logika disiapkan di controller lalu dikirim ke view |
+> | **Kapan digunakan** | Untuk komponen kecil yang reusable dan berdiri sendiri                   | Untuk halaman utama atau tampilan penuh             |
+> | **Contoh**        | `<?= view_cell('App\\Cells\\ArtikelTerkini::render') ?>`                       | `return view('home');`                              |
+
 * Ubah View Cell agar hanya menampilkan post dengan kategori tertentu.
 
 ---
