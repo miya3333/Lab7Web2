@@ -984,7 +984,7 @@ php spark make:seeder UserSeeder
 
 <img src="file/4_7_1.png" width="max-content">
 
-Buka file `UserSeeder.php` di dalam direktori `app/Database/Seeds/UserSeeder.php` dan tambahkan atau rubah:
+Buka file `UserSeeder.php` di dalam direktori `app/Database/Seeds/UserSeeder.php` dan tambahkan atau rubah menjadi:
 ```php
 <?php
 
