@@ -1053,14 +1053,36 @@ Buka file `app/Config/Filters.php` tambahkan:
 
 Selanjutnya buka file `app/Config/Routes.php` dan sesuaikan kodenya:
 ```php
-
+$routes->group('admin', ['filter' => 'auth'], function ($routes) {
+    $routes->get('artikel', 'Artikel::admin_index');
+    $routes->add('artikel/add', 'Artikel::add');
+    $routes->add('artikel/edit/(:any)', 'Artikel::edit/$1');
+    $routes->get('artikel/delete/(:any)', 'Artikel::delete/$1');
+});
 ```
 
 <img src="file/4_4.png" width="max-content">
 
 ### 4.8. Percobaan Akses Menu Admin
 
+Akses http://localhost:8080/lab11_ci/ci4/public/index.php/user/login
+
+<img src="file/4_5.png" width="max-content">
+
+Jika berhasil masuk ⬇️
+
+<img src="file/4_6.png" width="max-content">
+
 ### 4.9. Fungsi Logout
+
+Tambah fungsi logout pada Controller User:
+```php
+public function logout()
+{
+    session()->destroy();
+    return redirect()->to('/user/login');
+}
+```
 
 ---
 
