@@ -806,9 +806,13 @@ Buat folder `components` di dalam `app/Views` dan buat file `artikel_terkini.php
 Pertanyan dan Tugas Praktikum 3
 * Sesuaikan data dengan praktikum sebelumnya, perlu melakukan perubahan field pada database dengan menambahkan tanggal agar dapat mengambil data artikel terbaru.
 
+**Jawab:**
+
 <img src="file/jawab_3_1.png" width="max-content">
 
 * Selesaikan programnya sesuai langkah-langkah yang ada. Anda boleh melakukan improvisasi.
+
+**Jawab:**
 
 <img src="file/jawab_3_2.png" width="max-content">
 
@@ -823,6 +827,8 @@ Pertanyan dan Tugas Praktikum 3
 
 * Jelaskan perbedaan antara View Cell dan View biasa.
 
+**Jawab:**
+
 > | Aspek            | View Cell                                                                 | View Biasa                                          |
 > |------------------|---------------------------------------------------------------------------|-----------------------------------------------------|
 > | **Fungsi**        | Memanggil _view_ dari method di dalam class, biasanya untuk widget kecil | Menampilkan file view secara langsung               |
@@ -831,6 +837,10 @@ Pertanyan dan Tugas Praktikum 3
 > | **Contoh**        | `<?= view_cell('App\\Cells\\ArtikelTerkini::render') ?>`                       | `return view('home');`                              |
 
 * Ubah View Cell agar hanya menampilkan post dengan kategori tertentu.
+
+**Jawab:**
+
+<img src="file/jawab_3_5.png" width="max-content">
 
 ---
 
