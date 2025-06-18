@@ -849,6 +849,108 @@ Dengan sedikit improvisasi, menambahkan `Artikel Kesehatan` dan mengkategorikann
 # Praktikum 4
 **[Kembali Ke Atas ⬆️](#praktikum-1-11-pemrograman-web-2)**
 
+### 4.1. Buat Tabel User Login
+
+Code:
+```sql
+CREATE TABLE user (
+	id INT(11) auto_increment,
+	username VARCHAR(200) NOT NULL,
+	useremail VARCHAR(200),
+	userpassword VARCHAR(200),
+	PRIMARY KEY(id)
+);
+```
+
+<img src="file/4_1.png" width="max-content">
+
+### 4.2. Buat Model User
+
+Buat Model pada direktori `app/Models` dengan nama `UserModel.php` untuk memproses login:
+```php
+<?php
+
+namespace App\Models;
+
+use CodeIgniter\Model;
+
+class UserModel extends Model
+{
+    protected $table = 'user';
+    protected $primaryKey = 'id';
+    protected $useAutoIncrement = true;
+    protected $allowedFields = ['username', 'useremail', 'userpassword'];
+}
+```
+
+### 4.3. Buat Controller User
+
+Pada direktori `app/Controllers` buat file `User.php` dan tambahkan fungsi `index()` untuk menampilkan daftar user, dan fungsi `login()` untuk proses login:
+
+```php
+<?php
+
+namespace App\Controllers;
+
+use App\Models\UserModel;
+
+class User extends BaseController
+{
+    public function index()
+    {
+        $title = 'Daftar User';
+        $model = new UserModel();
+        $users = $model->findAll();
+        return view('user/index', compact('users', 'title'));
+    }
+    public function login()
+    {
+        helper(['form']);
+        $email = $this->request->getPost('email');
+        $password = $this->request->getPost('password');
+        if (!$email) {
+            return view('user/login');
+        }
+        $session = session();
+        $model = new UserModel();
+        $login = $model->where('useremail', $email)->first();
+        if ($login) {
+            $pass = $login['userpassword'];
+            if (password_verify($password, $pass)) {
+                $login_data = [
+                    'user_id' => $login['id'],
+                    'user_name' => $login['username'],
+                    'user_email' => $login['useremail'],
+                    'logged_in' => TRUE,
+                ];
+                $session->set($login_data);
+                return redirect('admin/artikel');
+            } else {
+                $session->setFlashdata("flash_msg", "Password salah.");
+                return redirect()->to('/user/login');
+            }
+        } else {
+            $session->setFlashdata("flash_msg", "email tidak terdaftar.");
+            return redirect()->to('/user/login');
+        }
+    }
+}
+```
+
+### 4.4. Buat View Login
+
+
+
+### 4.5. Buat Database Seeder
+
+### 4.6. Uji Coba Login
+
+### 4.7. Tambahkan Auth Filter
+
+### 4.8. Percobaan Akses Menu Admin
+
+### 4.9. Fungsi Logout
+
 ---
 
 # Praktikum 5
