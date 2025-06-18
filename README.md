@@ -1130,9 +1130,67 @@ Lalu buka file `Views/artikel/admin_index.php` dan tambahkan kode:
 <?= $pager->links(); ?>
 ```
 
-Buka kembali daftar artikel:
+Akses http://localhost:8080/lab11_ci/ci4/public/index.php/admin/artikel :
 
 <img src="file/5_1.png" width="max-content">
+
+### 5.2. Buat Pencarian
+
+Buka Controller Artikel, pada fungsi `admin_index()` ubah kodenya.
+
+Dari:
+```php
+public function admin_index()
+{
+    $title = 'Daftar Artikel';
+    $model = new ArtikelModel();
+    $data = [
+        'title' => $title,
+        'artikel' => $model->paginate(10), #data dibatasi 10 record per halaman
+        'pager' => $model->pager,
+    ];
+    return view('artikel/admin_index', $data);
+}
+```
+
+Menjadi:
+```php
+public function admin_index()
+{
+    $title = 'Daftar Artikel';
+    $q = $this->request->getVar('q') ?? '';
+    $model = new ArtikelModel();
+    $data = [
+        'title' => $title,
+        'q' => $q,
+        'artikel' => $model->like('judul', $q)->paginate(10), # data dibatasi 10 record per halaman
+        'pager' => $model->pager,
+    ];
+    return view('artikel/admin_index', $data);
+}
+```
+
+Lalu buka kembali file `Views/artikel/admin_index.php` dan tambahkan form pencarian sebelum deklarasi tabel:
+```html
+<form method="get" class="form-search">
+    <input type="text" name="q" value="<?= $q; ?>" placeholder="Cari data">
+    <input type="submit" value="Cari" class="btn btn-primary">
+</form>
+```
+
+Pada link pager ubah, dari:
+```php
+<?= $pager->links(); ?>
+```
+
+Menjadi:
+```php
+<?= $pager->only(['q'])->links(); ?>
+```
+
+Buka kembali halaman admin artikel:
+
+<img src="file/5_2.png" width="max-content">
 
 ---
 
