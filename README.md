@@ -982,6 +982,8 @@ Digunakan untuk membuat data dummy bertujuan ujicoba modul login. Buka CLI dan t
 php spark make:seeder UserSeeder
 ```
 
+<img src="file/4_7.png" width="max-content">
+
 Buka file `UserSeeder.php` di dalam direktori `app/Database/Seeds/UserSeeder.php`:
 ```php
 <?php
@@ -1008,6 +1010,8 @@ Selanjutnya buka kembali CLI dan ketik:
 ```bash
 php spark db:seed UserSeeder
 ```
+
+<img src="file/4_8.png" width="max-content">
 
 ### 4.6. Uji Coba Login
 
