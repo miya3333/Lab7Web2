@@ -530,10 +530,10 @@ Untuk proses CRUD data artikel. Buat method pada `Controllers/Artikel.php`:
 ```php
 public function admin_index()
 {
-	$title = 'Daftar Artikel';
-	$model = new ArtikelModel();
-	$artikel = $model->findAll();
-	return view('artikel/admin_index', compact('artikel', 'title'));
+    $title = 'Daftar Artikel';
+    $model = new ArtikelModel();
+    $artikel = $model->findAll();
+    return view('artikel/admin_index', compact('artikel', 'title'));
 }
 ```
 
@@ -854,11 +854,11 @@ Dengan sedikit improvisasi, menambahkan `Artikel Kesehatan` dan mengkategorikann
 Code:
 ```sql
 CREATE TABLE user (
-	id INT(11) auto_increment,
-	username VARCHAR(200) NOT NULL,
-	useremail VARCHAR(200),
-	userpassword VARCHAR(200),
-	PRIMARY KEY(id)
+    id INT(11) auto_increment,
+    username VARCHAR(200) NOT NULL,
+    useremail VARCHAR(200),
+    userpassword VARCHAR(200),
+    PRIMARY KEY(id)
 );
 ```
 
@@ -1092,6 +1092,47 @@ public function logout()
 
 # Praktikum 5
 **[Kembali Ke Atas ⬆️](#praktikum-1-11-pemrograman-web-2)**
+
+### 5.1. Buat Pagination
+
+Pagination merupakan proses yang digunakan untuk membatasi tampilan yang panjang dari data yang banyak pada sebuah website. Fungsi pagination adalah memecah tampilan menjadi beberapa halaman tergantung banyaknya data yang akan ditampilkan pada setiap halaman. Pada Codeigniter 4, fungsi pagination sudah tersedia pada Library sehingga cukup mudah menggunakannya.
+
+Buka Controller Artikel dan modifikasi kode pada fungsi `admin_index()`.
+
+Dari:
+```php
+public function admin_index()
+{
+    $title = 'Daftar Artikel';
+    $model = new ArtikelModel();
+    $artikel = $model->findAll();
+    return view('artikel/admin_index', compact('artikel', 'title'));
+}
+```
+
+Menjadi:
+```php
+public function admin_index()
+{
+    $title = 'Daftar Artikel';
+    $model = new ArtikelModel();
+    $data = [
+        'title' => $title,
+        'artikel' => $model->paginate(10), #data dibatasi 10 record per halaman
+        'pager' => $model->pager,
+    ];
+    return view('artikel/admin_index', $data);
+}
+```
+
+Lalu buka file `Views/artikel/admin_index.php` dan tambahkan kode:
+```php
+<?= $pager->links(); ?>
+```
+
+Buka kembali daftar artikel:
+
+<img src="file/5_1.png" width="max-content">
 
 ---
 
