@@ -1197,6 +1197,75 @@ Buka kembali halaman admin artikel:
 # Praktikum 6
 **[Kembali Ke Atas ⬆️](#praktikum-1-11-pemrograman-web-2)**
 
+### 6.1. Upload Gambar pada Artikel
+
+Buka Controller Artikel dan sesuaikan kode pada fungsi add(), dari:
+```php
+public function add()
+{
+    // validasi data.
+    $validation = \Config\Services::validation();
+    $validation->setRules(['judul' => 'required']);
+    $isDataValid = $validation->withRequest($this->request)->run();
+    
+    if ($isDataValid) {
+        $artikel = new ArtikelModel();
+        $artikel->insert([
+            'judul' => $this->request->getPost('judul'),
+            'isi' => $this->request->getPost('isi'),
+            'slug' => url_title($this->request->getPost('judul')),
+        ]);
+        return redirect('admin/artikel');
+    }
+    $title = "Tambah Artikel";
+    return view('artikel/form_add', compact('title'));
+}
+```
+
+Menjadi:
+```php
+public function add()
+{
+    // validasi data.
+    $validation = \Config\Services::validation();
+    $validation->setRules(['judul' => 'required']);
+    $isDataValid = $validation->withRequest($this->request)->run();
+    
+    if ($isDataValid) {
+        $file = $this->request->getFile('gambar');
+        $file->move(ROOTPATH . 'public/gambar');
+        
+        $artikel = new ArtikelModel();
+        $artikel->insert([
+            'judul' => $this->request->getPost('judul'),
+            'isi' => $this->request->getPost('isi'),
+            'slug' => url_title($this->request->getPost('judul')),
+        ]);
+        return redirect('admin/artikel');
+    }
+    $title = "Tambah Artikel";
+    return view('artikel/form_add', compact('title'));
+}
+```
+
+Pada file `Views/artikel/form_add.php` tambahkan field input file:
+```html
+<p>
+    <input type="file" name="gambar">
+</p>
+```
+
+Sesuaikan tag form dengan menambahkan encrypt type:
+```html
+form action="" method="post" enctype="multipart/form-data">
+```
+
+<img src="file/6_1.png" width="max-content">
+
+Ujicoba file upload dengan mengakses http://localhost:8080/lab11_ci/ci4/public/index.php/admin/artikel/add
+
+<img src="file/6_2.png" width="max-content">
+
 ---
 
 # Praktikum 7
