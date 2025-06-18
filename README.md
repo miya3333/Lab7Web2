@@ -977,7 +977,37 @@ Buat direktori baru `user` di `app/Views`, lalu buat file `login.php`:
 
 ### 4.5. Buat Database Seeder
 
+Digunakan untuk membuat data dummy bertujuan ujicoba modul login. Buka CLI dan tulis:
+```bash
+php spark make:seeder UserSeeder
+```
 
+Buka file `UserSeeder.php` di dalam direktori `app/Database/Seeds/UserSeeder.php`:
+```php
+<?php
+
+namespace App\Database\Seeds;
+
+use CodeIgniter\Database\Seeder;
+
+class UserSeeder extends Seeder
+{
+    public function run()
+    {
+        $model = model('UserModel');
+        $model->insert([
+            'username' => 'admin',
+            'useremail' => 'admin@email.com',
+            'userpassword' => password_hash('admin123', PASSWORD_DEFAULT),
+        ]);
+    }
+}
+```
+
+Selanjutnya buka kembali CLI dan ketik:
+```bash
+php spark db:seed UserSeeder
+```
 
 ### 4.6. Uji Coba Login
 
