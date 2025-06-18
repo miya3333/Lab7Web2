@@ -7,12 +7,12 @@ Aldi Hermansyah - 312310200 - Ti.23.A2
 ---
 
 # Daftar Praktikum
-**[Praktikum 1](#praktikum-1-11-pemrograman-web-2)** - **[Praktikum 2](#praktikum-2)** - **[Praktikum 3](#praktikum-3)** - **[Praktikum 4](#praktikum-4)** - **[Praktikum 5](#praktikum-5)** - **[Praktikum 6](#praktikum-6)** - **[Praktikum 7](#praktikum-7)** - **[Praktikum 8](#praktikum-8)** - **[Praktikum 9](#praktikum-9)** - **[Praktikum 10](#praktikum-10)** - **[Praktikum 11](#praktikum-11)**
+**[Praktikum 1](#praktikum-1)** - **[Praktikum 2](#praktikum-2)** - **[Praktikum 3](#praktikum-3)** - **[Praktikum 4](#praktikum-4)** - **[Praktikum 5](#praktikum-5)** - **[Praktikum 6](#praktikum-6)** - **[Praktikum 7](#praktikum-7)** - **[Praktikum 8](#praktikum-8)** - **[Praktikum 9](#praktikum-9)** - **[Praktikum 10](#praktikum-10)** - **[Praktikum 11](#praktikum-11)**
 
 ---
 
 # Praktikum 1
-**[Kembali Ke Atas ⬆️](#daftar-praktikum)**
+**[Kembali Ke Atas ⬆️](#praktikum-1-11-pemrograman-web-2)**
 
 ### 1.1. Aktifkan Extensi
 
@@ -350,7 +350,7 @@ Refresh tampilan pada alamat http://localhost:8080/lab11_ci/ci4/public/about
 ---
 
 # Praktikum 2
-**[Kembali Ke Atas ⬆️](#daftar-praktikum)**
+**[Kembali Ke Atas ⬆️](#praktikum-1-11-pemrograman-web-2)**
 
 ### 2.1. Buat Database
 
@@ -694,7 +694,7 @@ public function delete($id)
 ---
 
 # Praktikum 3
-**[Kembali Ke Atas ⬆️](#daftar-praktikum)**
+**[Kembali Ke Atas ⬆️](#praktikum-1-11-pemrograman-web-2)**
 
 ### 3.1. Buat Layout Utama
 
@@ -847,41 +847,41 @@ Dengan sedikit improvisasi, menambahkan `Artikel Kesehatan` dan mengkategorikann
 ---
 
 # Praktikum 4
-**[Kembali Ke Atas ⬆️](#daftar-praktikum)**
+**[Kembali Ke Atas ⬆️](#praktikum-1-11-pemrograman-web-2)**
 
 ---
 
 # Praktikum 5
-**[Kembali Ke Atas ⬆️](#daftar-praktikum)**
+**[Kembali Ke Atas ⬆️](#praktikum-1-11-pemrograman-web-2)**
 
 ---
 
 # Praktikum 6
-**[Kembali Ke Atas ⬆️](#daftar-praktikum)**
+**[Kembali Ke Atas ⬆️](#praktikum-1-11-pemrograman-web-2)**
 
 ---
 
 # Praktikum 7
-**[Kembali Ke Atas ⬆️](#daftar-praktikum)**
+**[Kembali Ke Atas ⬆️](#praktikum-1-11-pemrograman-web-2)**
 
 ---
 
 # Praktikum 8
-**[Kembali Ke Atas ⬆️](#daftar-praktikum)**
+**[Kembali Ke Atas ⬆️](#praktikum-1-11-pemrograman-web-2)**
 
 ---
 
 # Praktikum 9
-**[Kembali Ke Atas ⬆️](#daftar-praktikum)**
+**[Kembali Ke Atas ⬆️](#praktikum-1-11-pemrograman-web-2)**
 
 ---
 
 # Praktikum 10
-**[Kembali Ke Atas ⬆️](#daftar-praktikum)**
+**[Kembali Ke Atas ⬆️](#praktikum-1-11-pemrograman-web-2)**
 
 ---
 
 # Praktikum 11
-**[Kembali Ke Atas ⬆️](#daftar-praktikum)**
+**[Kembali Ke Atas ⬆️](#praktikum-1-11-pemrograman-web-2)**
 
 ---
