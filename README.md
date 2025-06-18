@@ -840,7 +840,7 @@ Pertanyan dan Tugas Praktikum 3
 
 **Jawab:**
 
-Dengan menambahkan `Artikel Kesehatan` dan mengkategorikan `Artikel Kedua` menjadi `Kesehatan`. Maka yang muncul di `Artikel Terkini` adalah artikel yang memiliki kategori `Kesehatan`.
+Dengan sedikit improvisasi, menambahkan `Artikel Kesehatan` dan mengkategorikannya dengan `Artikel Kedua` menjadi `Kesehatan`. Maka yang muncul di `Artikel Terkini` adalah artikel yang memiliki kategori `Kesehatan`.
 
 <img src="file/jawab_3_5.png" width="max-content">
 
