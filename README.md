@@ -1506,8 +1506,7 @@ class Artikel extends BaseController
         // Building the query
         $builder = $model->table('artikel')
             ->select('artikel.*, kategori.nama_kategori')
-            ->join('kategori', 'kategori.id_kategori =
-artikel.id_kategori');
+            ->join('kategori', 'kategori.id_kategori = artikel.id_kategori');
         // Apply search filter if keyword is provided
         if ($q != '') {
             $builder->like('artikel.judul', $q);
@@ -1579,8 +1578,7 @@ artikel.id_kategori');
         $model = new ArtikelModel();
         $data['artikel'] = $model->where('slug', $slug)->first();
         if (empty($data['artikel'])) {
-            throw new \CodeIgniter\Exceptions\PageNotFoundException('Cannot
-find the article.');
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Cannot find the article.');
         }
         $data['title'] = $data['artikel']['judul'];
         return view('artikel/detail', $data);
