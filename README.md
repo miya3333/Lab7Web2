@@ -807,19 +807,19 @@ Buat folder `components` di dalam `app/Views` dan buat file `artikel_terkini.php
 * Sesuaikan data dengan praktikum sebelumnya, perlu melakukan perubahan field pada database dengan menambahkan tanggal agar dapat mengambil data artikel terbaru.
 
 **Jawab:**
-
-<img src="file/jawab_3_1.png" width="max-content">
+> 
+> <img src="file/jawab_3_1.png" width="max-content">
 
 * Selesaikan programnya sesuai langkah-langkah yang ada. Anda boleh melakukan improvisasi.
 
 **Jawab:**
-
-<img src="file/jawab_3_2.png" width="max-content">
+> 
+> <img src="file/jawab_3_2.png" width="max-content">
 
 * Apa manfaat utama dari penggunaan View Layout dalam pengembangan aplikasi?
 
 **Jawab:**
-
+> 
 > Memisahkan bagian-bagian seperti header, footer, dan sidebar dari konten utama. <br>
 > Tidak perlu menulis ulang struktur HTML yang sama di setiap halaman. <br>
 > Semua halaman memiliki layout yang seragam. <br>
@@ -828,7 +828,7 @@ Buat folder `components` di dalam `app/Views` dan buat file `artikel_terkini.php
 * Jelaskan perbedaan antara View Cell dan View biasa.
 
 **Jawab:**
-
+> 
 > | Aspek            | View Cell                                                                 | View Biasa                                          |
 > |------------------|---------------------------------------------------------------------------|-----------------------------------------------------|
 > | **Fungsi**        | Memanggil _view_ dari method di dalam class, biasanya untuk widget kecil | Menampilkan file view secara langsung               |
@@ -839,10 +839,10 @@ Buat folder `components` di dalam `app/Views` dan buat file `artikel_terkini.php
 * Ubah View Cell agar hanya menampilkan post dengan kategori tertentu.
 
 **Jawab:**
-
-Dengan sedikit improvisasi, menambahkan `Artikel Kesehatan` dan mengkategorikannya dengan `Artikel Kedua` menjadi `Kesehatan`. Maka yang muncul di `Artikel Terkini` adalah artikel yang memiliki kategori `Kesehatan`.
-
-<img src="file/jawab_3_5.png" width="max-content">
+> 
+> Dengan sedikit improvisasi, menambahkan `Artikel Kesehatan` dan mengkategorikannya dengan `Artikel Kedua` menjadi `Kesehatan`. Maka yang muncul di `Artikel Terkini` adalah artikel yang memiliki kategori `Kesehatan`.
+> 
+> <img src="file/jawab_3_5.png" width="max-content">
 
 ---
 
@@ -1844,104 +1844,141 @@ Lakukan uji coba untuk memastikan semua fungsi berjalan dengan baik:
 
 * Menampilkan daftar artikel dengan nama kategori.
 
-Jawab:
-
-Menampilkan semua kategori artikel:
-<img src="file/7_3.png" width="max-content">
-
-Menampilkan kategori `Kartun`:
-<img src="file/7_4.png" width="max-content">
+**Jawab:**
+> 
+> Menampilkan semua kategori artikel:
+> <img src="file/7_3.png" width="max-content">
+> 
+> Menampilkan kategori `Kartun`:
+> <img src="file/7_4.png" width="max-content">
 
 * Menambah artikel baru dengan memilih kategori.
 
-Jawab:
-
-Memilih kategori `Kartun`:
-<img src="file/7_5.png" width="max-content">
-
-Kategori sudah dipilih:
-<img src="file/7_6.png" width="max-content">
-
-Artikel sudah ditambahkan:
-<img src="file/7_7.png" width="max-content">
-
-Artikel sudah bisa dilihat:
-<img src="file/7_8.png" width="max-content">
+**Jawab:**
+> 
+> Memilih kategori `Kartun`:
+> <img src="file/7_5.png" width="max-content">
+> 
+> Kategori sudah dipilih:
+> <img src="file/7_6.png" width="max-content">
+> 
+> Artikel sudah ditambahkan:
+> <img src="file/7_7.png" width="max-content">
+> 
+> Artikel sudah bisa dilihat:
+> <img src="file/7_8.png" width="max-content">
 
 * Mengedit artikel dan mengubah kategorinya.
 
-Jawab:
-
-Ubah kategori menjadi `Umum`:
-<img src="file/7_9.png" width="max-content">
-
-Kategori berubah:
-<img src="file/7_10.png" width="max-content">
-
-Kategori artikel berubah:
-<img src="file/7_11.png" width="max-content">
+**Jawab:**
+> 
+> Ubah kategori menjadi `Umum`:
+> <img src="file/7_9.png" width="max-content">
+> 
+> Kategori berubah:
+> <img src="file/7_10.png" width="max-content">
+> 
+> Kategori artikel berubah:
+> <img src="file/7_11.png" width="max-content">
 
 * Menghapus artikel.
 
-Jawab:
-
-Konfirmasi delete:
-<img src="file/7_12.png" width="max-content">
-
-Artikel sudah terhapus:
-<img src="file/7_13.png" width="max-content">
+**Jawab:**
+> 
+> Konfirmasi delete:
+> <img src="file/7_12.png" width="max-content">
+> 
+> Artikel sudah terhapus:
+> <img src="file/7_13.png" width="max-content">
 
 ## Pertanyaan dan Tugas Praktikum 7
 
 1. Selesaikan semua langkah praktikum di atas.
 
-Jawab: `Sudah`.
+**Jawab:**
+> 
+> `Sudah`.
 
 2. Modifikasi tampilan detail artikel (artikel/detail.php) untuk menampilkan nama kategori artikel.
 
-Ubah `Views/artikel/detail.php`.
-
-Dari:
-```php
-<?= $this->include('template/header'); ?>
-
-<article class="detail-konten">
-    <h2 class="judul">
-        <?= $artikel['judul']; ?>
-    </h2>
-
-    <img src="<?= base_url('/gambar/' . $artikel['gambar']); ?>" alt="<?= $artikel['judul']; ?>" class="gambar">
-
-    <p class="isi">
-        <?= $artikel['isi']; ?>
-    </p>
-</article>
-
-<?= $this->include('template/footer'); ?>
-```
-
-Menjadi:
-```php
-<?= $this->include('template/header'); ?>
-
-<article class="detail-konten">
-    <h2>
-        <?= $artikel['judul']; ?>
-    </h2>
-
-    <p class="kategori">
-        <strong>Kategori:</strong> <?= esc($artikel['nama_kategori']); ?>
-    </p>
-
-    <img src="<?= base_url('/gambar/' . $artikel['gambar']); ?>" alt="<?= $artikel['judul']; ?>" class="gambar">
-
-    <p class="isi">
-        <?= $artikel['isi']; ?>
-    </p>
-</article>
-
-<?= $this->include('template/footer'); ?>
-```
+**Jawab:**
+> 
+> Ubah `Views/artikel/detail.php`.
+> 
+> Dari:
+> ```php
+> <?= $this->include('template/header'); ?>
+> 
+> <article class="detail-konten">
+>     <h2 class="judul">
+>         <?= $artikel['judul']; ?>
+>     </h2>
+> 
+>     <img src="<?= base_url('/gambar/' . $artikel['gambar']); ?>" alt="<?= $artikel['judul']; ?>" class="gambar">
+> 
+>     <p class="isi">
+>         <?= $artikel['isi']; ?>
+>     </p>
+> </article>
+> 
+> <?= $this->include('template/footer'); ?>
+> ```
+> 
+> Menjadi:
+> ```php
+> <?= $this->include('template/header'); ?>
+> 
+> <article class="detail-konten">
+>     <h2>
+>         <?= $artikel['judul']; ?>
+>     </h2>
+> 
+>     <p class="kategori">
+>         <strong>Kategori:</strong> <?= esc($artikel['nama_kategori']); ?>
+>     </p>
+> 
+>     <img src="<?= base_url('/gambar/' . $artikel['gambar']); ?>" alt="<?= $artikel['judul']; ?>" class="gambar">
+> 
+>     <p class="isi">
+>         <?= $artikel['isi']; ?>
+>     </p>
+> </article>
+> 
+> <?= $this->include('template/footer'); ?>
+> ```
+> 
+> Dan tambahkan style:
+> ```css
+> .detail-konten .gambar {
+>     max-width: 300px;
+>     height: auto;
+> }
+> .detail-konten .isi {
+>     text-align: justify;
+>     line-height: 25px;
+> }
+> .detail-konten .kategori { 
+>     width: max-content;
+>     padding: 0.5rem 1rem;
+>     color: white;
+>     background-color: #007bff83;
+>     border-radius: 3rem;
+>     -webkit-border-radius: 3rem;
+>     -moz-border-radius: 3rem;
+>     -ms-border-radius: 3rem;
+>     -o-border-radius: 3rem;
+> }
+> ```
+> 
+> Berikut hasilnya.
+> > 
+> > Sebelum:
+> > 
+> > <img src="file/7_14.png" width="max-content">
+> > 
+> > Sesudah:
+> > 
+> > <img src="file/7_15.png" width="max-content">
 
 3. Tambahkan fitur untuk menampilkan daftar kategori di halaman depan (opsional).
 
