@@ -803,7 +803,7 @@ Buat folder `components` di dalam `app/Views` dan buat file `artikel_terkini.php
 
 ---
 
-## Pertanyan dan Tugas Praktikum 3
+## Pertanyaan dan Tugas Praktikum 3
 * Sesuaikan data dengan praktikum sebelumnya, perlu melakukan perubahan field pada database dengan menambahkan tanggal agar dapat mengambil data artikel terbaru.
 
 **Jawab:**
