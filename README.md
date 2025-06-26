@@ -1836,13 +1836,60 @@ Buka folder `Views/artikel` dan sesuaikan view.
 > <?= $this->include('template/admin_footer'); ?>
 > ```
 
+---
+
 ## Testing Praktikum 7
 
 Lakukan uji coba untuk memastikan semua fungsi berjalan dengan baik:
+
 * Menampilkan daftar artikel dengan nama kategori.
+
+Jawab:
+
+Menampilkan semua kategori artikel:
+<img src="file/7_3.png" width="max-content">
+
+Menampilkan kategori `Kartun`:
+<img src="file/7_4.png" width="max-content">
+
 * Menambah artikel baru dengan memilih kategori.
+
+Jawab:
+
+Memilih kategori `Kartun`:
+<img src="file/7_5.png" width="max-content">
+
+Kategori sudah dipilih:
+<img src="file/7_6.png" width="max-content">
+
+Artikel sudah ditambahkan:
+<img src="file/7_7.png" width="max-content">
+
+Artikel sudah bisa dilihat:
+<img src="file/7_8.png" width="max-content">
+
 * Mengedit artikel dan mengubah kategorinya.
+
+Jawab:
+
+Ubah kategori menjadi `Umum`:
+<img src="file/7_9.png" width="max-content">
+
+Kategori berubah:
+<img src="file/7_10.png" width="max-content">
+
+Kategori artikel berubah:
+<img src="file/7_11.png" width="max-content">
+
 * Menghapus artikel.
+
+Jawab:
+
+Konfirmasi delete:
+<img src="file/7_12.png" width="max-content">
+
+Artikel sudah terhapus:
+<img src="file/7_13.png" width="max-content">
 
 ## Pertanyaan dan Tugas Praktikum 7
 
