@@ -1895,11 +1895,12 @@ Artikel sudah terhapus:
 
 1. Selesaikan semua langkah praktikum di atas.
 
-Jawab: `Sudah`
+Jawab: `Sudah`.
 
 2. Modifikasi tampilan detail artikel (artikel/detail.php) untuk menampilkan nama kategori artikel.
 
 Ubah `Views/artikel/detail.php`.
+
 Dari:
 ```php
 <?= $this->include('template/header'); ?>
