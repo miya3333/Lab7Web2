@@ -13,7 +13,9 @@ Aldi Hermansyah - 312310200 - Ti.23.A2
 
 **[Praktikum 7](#praktikum-7)** - **[Praktikum 7: Testing](#testing-praktikum-7)** - **[Praktikum 7: Pertanyaan dan Tugas](#pertanyaan-dan-tugas-praktikum-7)**
 
-**[Praktikum 8](#praktikum-8)** - **[Praktikum 9](#praktikum-9)** - **[Praktikum 10](#praktikum-10)** - **[Praktikum 11](#praktikum-11)**
+**[Praktikum 8](#praktikum-8)** - **[Praktikum 8: Pertanyaan dan Tugas](#pertanyaan-dan-tugas-praktikum-8)**
+
+**[Praktikum 9](#praktikum-9)** - **[Praktikum 10](#praktikum-10)** - **[Praktikum 11](#praktikum-11)**
 
 ---
 
@@ -2006,6 +2008,140 @@ Karena opsional, kemungkinan akan di update nantinya
 
 # Praktikum 8
 **[Kembali Ke Atas ⬆️](#praktikum-1-11-pemrograman-web-2)**
+
+## 8.1. Tambahkan Pustaka jQuery
+
+Kita akan menggunakan pustaka jQuery untuk mempermudah proses AJAX. Download pustaka jQuery versi terbaru dari https://jquery.com dan ekstrak filenya.
+
+Salin file `jquery-3.7.1.min.js` ke folder `public/assets/js`.
+
+## 8.2. Buat Controller AJAX
+
+Buka folder `Controllers` dan buat file `AjaxController.php` lalu isi:
+
+```php
+<?php
+
+namespace App\Controllers;
+
+use CodeIgniter\Controller;
+use CodeIgniter\HTTP\Request;
+use CodeIgniter\HTTP\Response;
+use App\Models\ArtikelModel;
+
+class AjaxController extends Controller
+{
+    public function index()
+    {
+        return view('ajax/index');
+    }
+    public function getData()
+    {
+        $model = new ArtikelModel();
+        $data = $model->findAll();
+        // Kirim data dalam format JSON
+        return $this->response->setJSON($data);
+    }
+    public function delete($id)
+    {
+        $model = new ArtikelModel();
+        $data = $model->delete($id);
+        $data = [
+            'status' => 'OK'
+        ];
+        // Kirim data dalam format JSON
+        return $this->response->setJSON($data);
+    }
+}
+```
+
+## 8.3. Buat View
+
+Buka folder `Views` lalu buat folder `ajax` dan buat file `index.php`:
+
+```html
+<?= $this->include('template/admin_header'); ?>
+
+<h2 class="sub-judul">Daftar Artikel (AJAX)</h2>
+<hr>
+
+<table class="table" id="artikelTable">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Judul</th>
+            <th>Kategori</th>
+            <th>Aksi</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script src="<?= base_url('assets/js/jquery-3.7.1.min.js') ?>"></script>
+<script>
+    $(document).ready(function() {
+        function loadData() {
+            $('#artikelTable tbody').html('<tr><td colspan="4">Loading...</td></tr>');
+            $.ajax({
+                url: "<?= base_url('ajax/getData') ?>",
+                method: "GET",
+                dataType: "json",
+                success: function(data) {
+                    let html = '';
+                    data.forEach(function(row) {
+                        html += '<tr>';
+                        html += '<td>' + row.id + '</td>';
+                        html += '<td>' + row.judul + '</td>';
+                        html += '<td>' + (row.nama_kategori || '-') + '</td>';
+                        html += '<td>';
+                        html += '<a href="<?= base_url('admin/artikel/edit/') ?>' + row.id +
+                            '" class="btn btn-primary">Edit</a> ';
+                        html += '<a href="#" class="btn btn-danger btn-delete" data-id="' + row
+                            .id + '">Hapus</a>';
+                        html += '</td></tr>';
+                    });
+                    $('#artikelTable tbody').html(html);
+                }
+            });
+        }
+
+        loadData();
+
+        $(document).on('click', '.btn-delete', function(e) {
+            e.preventDefault();
+            const id = $(this).data('id');
+            if (confirm('Yakin ingin menghapus artikel ini?')) {
+                $.ajax({
+                    url: "<?= base_url('ajax/delete/') ?>" + id,
+                    method: "DELETE",
+                    success: function() {
+                        loadData();
+                    },
+                    error: function() {
+                        alert('Gagal menghapus artikel.');
+                    }
+                });
+            }
+        });
+    });
+</script>
+
+<?= $this->include('template/admin_footer'); ?>
+```
+
+## 8.4. Tambah Routes
+
+Tambahkan:
+
+```php
+$routes->get('ajax', 'AjaxController::index');
+$routes->get('ajax/getData', 'AjaxController::getData');
+$routes->delete('ajax/delete/(:num)', 'AjaxController::delete/$1');
+```
+
+# Pertanyaan dan Tugas Praktikum 8
+
+Selesaikan programnya sesuai Langkah-langkah yang ada. Tambahkan fungsi untuk tambah dan ubah data. Anda boleh melakukan improvisasi.
 
 ---
 
