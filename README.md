@@ -7,7 +7,7 @@ Aldi Hermansyah - 312310200 - Ti.23.A2
 ---
 
 # Daftar Praktikum
-**[Praktikum 1](#praktikum-1)** - **[Praktikum 2](#praktikum-2)** - **[Praktikum 3](#praktikum-3)** - **[Praktikum 4](#praktikum-4)** - **[Praktikum 5](#praktikum-5)** - **[Praktikum 6](#praktikum-6)** - **[Praktikum 7](#praktikum-7)** - **[Praktikum 8](#praktikum-8)** - **[Praktikum 9](#praktikum-9)** - **[Praktikum 10](#praktikum-10)** - **[Praktikum 11](#praktikum-11)**
+**[Praktikum 1](#praktikum-1)** - **[Praktikum 2](#praktikum-2)** - **[Praktikum 3](#praktikum-3)** - **[Praktikum 3: Pertanyaan dan Tugas](#pertanyaan-dan-tugas-praktikum-3)** - **[Praktikum 4](#praktikum-4)** - **[Praktikum 5](#praktikum-5)** - **[Praktikum 6](#praktikum-6)** - **[Praktikum 7](#praktikum-7)** - **[Praktikum 7: Testing](#testing-praktikum-7)** - **[Praktikum 7: Pertanyaan dan Tugas](#pertanyaan-dan-tugas-praktikum-7)** - **[Praktikum 8](#praktikum-8)** - **[Praktikum 9](#praktikum-9)** - **[Praktikum 10](#praktikum-10)** - **[Praktikum 11](#praktikum-11)**
 
 ---
 
@@ -803,7 +803,7 @@ Buat folder `components` di dalam `app/Views` dan buat file `artikel_terkini.php
 
 ---
 
-Pertanyan dan Tugas Praktikum 3
+## Pertanyan dan Tugas Praktikum 3
 * Sesuaikan data dengan praktikum sebelumnya, perlu melakukan perubahan field pada database dengan menambahkan tanggal agar dapat mengambil data artikel terbaru.
 
 **Jawab:**
@@ -1836,7 +1836,7 @@ Buka folder `Views/artikel` dan sesuaikan view.
 > <?= $this->include('template/admin_footer'); ?>
 > ```
 
-## Testing
+## Testing Praktikum 7
 
 Lakukan uji coba untuk memastikan semua fungsi berjalan dengan baik:
 * Menampilkan daftar artikel dengan nama kategori.
@@ -1844,7 +1844,7 @@ Lakukan uji coba untuk memastikan semua fungsi berjalan dengan baik:
 * Mengedit artikel dan mengubah kategorinya.
 * Menghapus artikel.
 
-## Pertanyaan dan Tugas
+## Pertanyaan dan Tugas Praktikum 7
 
 1. Selesaikan semua langkah praktikum di atas.
 2. Modifikasi tampilan detail artikel (artikel/detail.php) untuk menampilkan nama kategori artikel.
