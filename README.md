@@ -1894,8 +1894,57 @@ Artikel sudah terhapus:
 ## Pertanyaan dan Tugas Praktikum 7
 
 1. Selesaikan semua langkah praktikum di atas.
+
+Jawab: `Sudah`
+
 2. Modifikasi tampilan detail artikel (artikel/detail.php) untuk menampilkan nama kategori artikel.
+
+Ubah `Views/artikel/detail.php`.
+Dari:
+```php
+<?= $this->include('template/header'); ?>
+
+<article class="detail-konten">
+    <h2 class="judul">
+        <?= $artikel['judul']; ?>
+    </h2>
+
+    <img src="<?= base_url('/gambar/' . $artikel['gambar']); ?>" alt="<?= $artikel['judul']; ?>" class="gambar">
+
+    <p class="isi">
+        <?= $artikel['isi']; ?>
+    </p>
+</article>
+
+<?= $this->include('template/footer'); ?>
+```
+
+Menjadi:
+```php
+<?= $this->include('template/header'); ?>
+
+<article class="detail-konten">
+    <h2>
+        <?= $artikel['judul']; ?>
+    </h2>
+
+    <p class="kategori">
+        <strong>Kategori:</strong> <?= esc($artikel['nama_kategori']); ?>
+    </p>
+
+    <img src="<?= base_url('/gambar/' . $artikel['gambar']); ?>" alt="<?= $artikel['judul']; ?>" class="gambar">
+
+    <p class="isi">
+        <?= $artikel['isi']; ?>
+    </p>
+</article>
+
+<?= $this->include('template/footer'); ?>
+```
+
 3. Tambahkan fitur untuk menampilkan daftar kategori di halaman depan (opsional).
+
+
 4. Buat fungsi untuk menampilkan artikel berdasarkan kategori tertentu (opsional).
 
 ---
