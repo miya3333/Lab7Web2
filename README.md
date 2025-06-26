@@ -2161,21 +2161,25 @@ Selesaikan programnya sesuai Langkah-langkah yang ada. Tambahkan fungsi untuk ta
 1. Selesaikan semua langkah praktikum di atas.
    
    Jawab:
+   > 
    > a
    
 2. Modifikasi tampilan data artikel dan pagination sesuai kebutuhan desain.
    
    Jawab:
+   >
    > a
    
 3. Tambahkan indikator loading saat data sedang diambil dari server.
    
    Jawab:
+   >
    > a
    
 4. Implementasikan fitur sorting (mengurutkan artikel berdasarkan judul, dll.) dengan AJAX.
 
    Jawab:
+   >
    > a
    
 ---
@@ -2183,9 +2187,51 @@ Selesaikan programnya sesuai Langkah-langkah yang ada. Tambahkan fungsi untuk ta
 # Praktikum 10
 **[Kembali Ke Atas ⬆️](#praktikum-1-11-pemrograman-web-2)**
 
+## 10.1. Unduh Aplikasi REST CLIENT
+
+Ada banyak aplikasi yang dapat digunakan untuk keperluan tersebut. Salah satunya adalah Postman. Postman – Merupakan aplikasi yang berfungsi sebagai REST Client, digunakan untuk testing REST API. Unduh apliasi Postman dari tautan berikut: https://www.postman.com/downloads/
+
+## 10.2. Buat Model
+
+Pada modul sebelumnya sudah dibuat ArtikelModel, pada modul ini kita akan memanfaatkan model tersebut agar dapat diakses melalui API.
+
+## 10.3. Buat REST Controller
+
+Penjelasan:
+
+| Method | Keterangan |
+|--------------|---------------------------------|
+| index() | Menampilkan seluruh data pada database |
+| create() | Menambahkan data baru ke database |
+| show() | Menampilkan suatu data spesifik dari database |
+| update() | Mengubah suatu data pada database |
+| delete() | Menghapus data dari database |
+
+## 10.4. Buat Routing REST API
+
+## 10.5. Testing REST API CodeIgniter
+
+### Menampilkan Semua Data
+
+### Menampilkan Data Spesifik
+
+### Mengubah Data
+
+### Menambahkan Data
+ 
+### Menghapus Data
+
 ---
 
 # Praktikum 11
 **[Kembali Ke Atas ⬆️](#praktikum-1-11-pemrograman-web-2)**
+
+## 11.1. Penggunaan Framework Vuejs
+
+## 11.2. Struktur Direktory
+
+## 11.3. Menampilkan Data
+
+## 11.4. Form Tambah dan Ubah Data
 
 ---
