@@ -2453,6 +2453,10 @@ Berikut tampilannya:
    > * Ada info judul, isi singkat, kategori, status, dan tombol aksi.
    >
    > * Pagination pakai class `.pagination` Bootstrap-style untuk styling gampang.
+   >
+   > Berikut tampilannya:
+   > 
+   > <img src="file/9_2.png" width="max-content">
    
 3. Tambahkan indikator loading saat data sedang diambil dari server.
    
@@ -2523,9 +2527,9 @@ Berikut tampilannya:
    > > sortFilter.on('change', () => searchForm.trigger('submit'));
    > > ```
 
-Berikut tampilannya:
-
-<img src="file/9_2.gif" width="max-content">
+   Berikut tampilannya:
+   
+   <img src="file/9_2.gif" width="max-content">
 
 ---
 
