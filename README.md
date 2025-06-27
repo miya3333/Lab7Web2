@@ -2241,25 +2241,92 @@ Penjelasan:
    
    **Jawab:**
    > 
-   > a
+   > Sudah.
+   >
+   > * `admin_index()` di Controller `Artikel` dimodifikasi untuk handle AJAX dan pagination.
+   > 
+   > * View `admin_index.php` sudah diubah: data artikel dan pagination dimuat via AJAX, menggunakan jQuery.
    
 2. Modifikasi tampilan data artikel dan pagination sesuai kebutuhan desain.
    
    **Jawab:**
    >
-   > a
+   > Done juga.
+   > 
+   > * Tabel artikel sudah dibuat clean dan responsif.
+   > 
+   > * Ada info judul, isi singkat, kategori, status, dan tombol aksi.
+   >
+   > * Pagination pakai class `.pagination` Bootstrap-style untuk styling gampang.
    
 3. Tambahkan indikator loading saat data sedang diambil dari server.
    
    **Jawab:**
    >
-   > a
+   > Udah beres.
+   >
+   > Tambah di `admin_index.php`:
+   >
+   > Html
+   > 
+   > ```html
+   > <div id="loading" style="display: none; text-align:center; margin: 20px 0;">
+   >     <div class="spinner-border text-primary" role="status"></div>
+   >     <p style="margin-top:10px;">Memuat data...</p>
+   > </div>
+   > ```
+   >
+   > JS
+   > 
+   > ```js
+   > if (showLoading) loadingIndicator.show(); // sebelum AJAX
+   > ...
+   > if (showLoading) loadingIndicator.hide(); // setelah selesai
+   > ```
    
 4. Implementasikan fitur sorting (mengurutkan artikel berdasarkan judul, dll.) dengan AJAX.
 
    **Jawab:**
    >
-   > a
+   > Done.
+   >
+   > Tambahkan di form filter `admin_index.php`:
+   > 
+   > ```html
+   > <select name="sort" id="sort-filter" class="form-control mr-2">
+   >     <option value="">Urutkan</option>
+   >     <option value="judul_asc" <?= $sort == 'judul_asc' ? 'selected' : ''; ?>>Judul A-Z</option>
+   >     <option value="judul_desc" <?= $sort == 'judul_desc' ? 'selected' : ''; ?>>Judul Z-A</option>
+   > </select>
+   > ```
+   >
+   > Di Controller `Artikel.php`:
+   > 
+   > ```php
+   > $sort = $this->request->getVar('sort') ?? '';
+   > if ($sort == 'judul_asc') {
+   >     $builder->orderBy('artikel.judul', 'asc');
+   > } elseif ($sort == 'judul_desc') {
+   >     $builder->orderBy('artikel.judul', 'desc');
+   > } else {
+   >     $builder->orderBy('artikel.id', 'desc'); // default: terbaru duluan
+   > }
+   > $data['sort'] = $sort;
+   > ```
+   >
+   > Tambahkan juga di `admin_index.php`:
+   > > 
+   > > URL JS saat fetch.
+   > > 
+   > > ```js
+   > > const sort = sortFilter.val();
+   > > fetchData(`${BASE_URL}admin/artikel?q=${q}&kategori_id=${kategori_id}&sort=${sort}`);
+   > > ```
+   > >
+   > > Trigger ulang saat dropdown berubah.
+   > > ```js
+   > > sortFilter.on('change', () => searchForm.trigger('submit'));
+   > > ```
    
 ---
 
