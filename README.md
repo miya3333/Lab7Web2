@@ -2147,6 +2147,28 @@ $routes->delete('ajax/delete/(:num)', 'AjaxController::delete/$1');
 
 Selesaikan programnya sesuai Langkah-langkah yang ada. Tambahkan fungsi untuk tambah dan ubah data. Anda boleh melakukan improvisasi.
 
+**Jawab:**
+> 
+> Ubah Artikel via AJAX:
+> >
+> > Tambah artikel.
+> >
+> > <img src="file/8_1.png" width="max-content">
+> > 
+> > Artikel sudah ditambah.
+> > 
+> > <img src="file/8_2.png" width="max-content">
+> > 
+> Edit Artikel via AJAX:
+> >
+> > Ubah artikel.
+> >
+> > <img src="file/8_3.png" width="max-content">
+> >
+> > Artikel sudah berubah.
+> >
+> > <img src="file/8_4.png" width="max-content">
+
 ---
 
 # Praktikum 9
@@ -2217,25 +2239,25 @@ Penjelasan:
 
 1. Selesaikan semua langkah praktikum di atas.
    
-   Jawab:
+   **Jawab:**
    > 
    > a
    
 2. Modifikasi tampilan data artikel dan pagination sesuai kebutuhan desain.
    
-   Jawab:
+   **Jawab:**
    >
    > a
    
 3. Tambahkan indikator loading saat data sedang diambil dari server.
    
-   Jawab:
+   **Jawab:**
    >
    > a
    
 4. Implementasikan fitur sorting (mengurutkan artikel berdasarkan judul, dll.) dengan AJAX.
 
-   Jawab:
+   **Jawab:**
    >
    > a
    
