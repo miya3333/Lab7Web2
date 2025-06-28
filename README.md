@@ -1,7 +1,7 @@
 # Praktikum 1-11 Pemrograman Web 2
 
 ```bash
-Aldi Hermansyah - 312310200 - Ti.23.A2
+Aldi Hermansyah - 312310200 - Ti.23.A.2
 ```
 
 ---
@@ -2546,6 +2546,14 @@ Pada modul sebelumnya sudah dibuat ArtikelModel, pada modul ini kita akan memanf
 
 ## 10.3. Buat REST Controller
 
+Buat file REST Controller yang berisi fungsi untuk menampilkan, menambah, mengubah dan menghapus data.
+
+Buat file `Post.php` di folder `app/Controllers`:
+
+```php
+
+```
+
 Penjelasan:
 
 | Method | Keterangan |
@@ -2558,17 +2566,92 @@ Penjelasan:
 
 ## 10.4. Buat Routing REST API
 
+Buka file `Routes.php` di `app/Config` dan tambahkan kode:
+
+```php
+$routes->resource('post');
+```
+
+Untuk mengecek route nya jalankan perintah berikut:
+
+```php
+php spark routes
+```
+
+<img src="file/10_1.png" width="max-content">
+
 ## 10.5. Testing REST API CodeIgniter
+
+Buka aplikasi `postman` dan pilih `create new` → `HTTP` Request
+
+<img src="file/10_2.png" width="max-content">
 
 ### Menampilkan Semua Data
 
+Pilih method GET dan masukkan URL berikut:
+
+```bash
+http://localhost:8080/lab11_ci/ci4/public/post
+```
+
+Lalu, klik Send. Jika hasil test menampilkan semua data artikel dari database, maka pengujian berhasil.
+
+<img src="file/10_3.png" width="max-content">
+
 ### Menampilkan Data Spesifik
+
+Masih menggunakan method `GET`, hanya perlu menambahkan ID artikel di belakang URL seperti ini:
+
+```bash
+http://localhost:8080/lab11_ci/ci4/public/post/4
+```
+
+Selanjutnya, klik `Send`. Request tersebut akan menampilkan data artikel yang memiliki ID nomor `4` di database.
+
+<img src="file/10_4.png" width="max-content">
 
 ### Mengubah Data
 
+Untuk mengubah data, silakan ganti method menjadi `PUT`. Kemudian, masukkan URL artikel yang ingin diubah. Misalnya, ingin mengubah data artikel dengan ID nomor `3`, maka masukkan URL berikut:
+
+```bash
+http://localhost:8080/lab11_ci/ci4/public/post/3
+```
+
+Klik `Headers` tambah `key`: `Content-Type` dan `value`: `application/json`. klik `Body` pilih `raw` dan pilih dropdown `JSON`, lalu tambahkan:
+```json
+{
+    "judul": "Artikel update via Postman",
+    "isi": "Isinya sudah berubah",
+    "id_kategori": 99
+}
+```
+  
+<img src="file/10_5.png" width="max-content">
+
 ### Menambahkan Data
+
+Anda perlu menggunakan method `POST` untuk menambahkan data baru ke database. Kemudian, masukkan URL berikut:
+
+```bash
+http://localhost:8080/lab11_ci/ci4/public/post/
+```
+
+Pilih tab `Body`, lalu pilih `x-www-form-uriencoded`. Masukkan atribut tabel pada kolom `KEY` dan nilai data baru di kolom `VALUE`. Jangan lupa, klik `Send`.
  
+<img src="file/10_6.png" width="max-content">
+
 ### Menghapus Data
+
+Pilih method `DELETE` untuk menghapus data. Lalu, masukkan URL spesifik data mana yang ingin di hapus. Misalnya, ingin menghapus data nomor `3`, maka URL-nya seperti ini:
+
+```bash
+http://localhost:8080/lab11_ci/ci4/public/post/3
+```
+
+Langsung saja klik `Send`, maka akan mendapatkan pesan bahwa data telah berhasil dihapus dari database.
+
+<img src="file/10_7.png" width="max-content">
 
 ---
 
