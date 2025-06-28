@@ -1,0 +1,622 @@
+DEBUG - 2025-06-28 13:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 13:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 13:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 13:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 13:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 13:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 13:58:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 14:01:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 14:01:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 14:17:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 14:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-28 14:28:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: post/4]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 14:29:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: post/4]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 14:29:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: post/4]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 14:29:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: post/2]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 14:29:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: post/4]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 14:30:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: post/4]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 14:32:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: post/4]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 14:37:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: post/4]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 14:39:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: post/4]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-28 14:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 14:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-28 14:40:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: post/4]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 14:40:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: post/4]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 14:40:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: post/4]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 14:43:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: post/4]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-28 14:44:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 14:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-28 14:45:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: post/4]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-28 14:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 14:46:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 14:46:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 14:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 14:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-28 14:48:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: post/4]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 14:49:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: post/4]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 14:50:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: post/4]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 14:51:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: post/4]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 14:53:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: post/4]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 14:53:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: post/4]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 14:54:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: post/4]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 14:57:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: post/3]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 14:57:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: post/3]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 15:00:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: post/3]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-28 15:03:59 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`lab_ci4`.`artikel`, CONSTRAINT `fk_kategori_artikel` FOREIGN KEY (`id_kategori`) REFERENCES `kategori` (`id_kategori`)) in C:\xampp\htdocs\lab11_ci\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `artikel...', 0)
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `artikel...')
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `artikel...')
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `artikel...', Array, false)
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\BaseModel.php(1027): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\lab11_ci\ci4\system\Model.php(863): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Post.php(61): CodeIgniter\Model->update('3', Array)
+#8 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(933): App\Controllers\Post->update('3')
+#9 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#10 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lab11_ci\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\lab11_ci\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-06-28 15:03:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`lab_ci4`.`artikel`, CONSTRAINT `fk_kategori_artikel` FOREIGN KEY (`id_kategori`) REFERENCES `kategori` (`id_kategori`))
+[Method: PUT, Route: post/3]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `artikel` SET `judul` = :judul:, `isi` = :isi:, `id_kategori` = :id_kategori:
+WHERE `artikel`.`id` IN :artikel.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\Post.php(61): CodeIgniter\Model->update('3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 15:03:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`lab_ci4`.`artikel`, CONSTRAINT `fk_kategori_artikel` FOREIGN KEY (`id_kategori`) REFERENCES `kategori` (`id_kategori`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `artikel` SET `judul` = \'Update dari Postman\', `isi` = \'Isi baru artikel\', `id_kategori` = 1
+WHERE `artikel`.`id` IN (\'3\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `artikel` SET `judul` = \'Update dari Postman\', `isi` = \'Isi baru artikel\', `id_kategori` = 1
+WHERE `artikel`.`id` IN (\'3\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `artikel` SET `judul` = :judul:, `isi` = :isi:, `id_kategori` = :id_kategori:
+WHERE `artikel`.`id` IN :artikel.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\Post.php(61): CodeIgniter\Model->update('3', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update('3')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 15:03:59 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`lab_ci4`.`artikel`, CONSTRAINT `fk_kategori_artikel` FOREIGN KEY (`id_kategori`) REFERENCES `kategori` (`id_kategori`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `artikel` SET `judul` = \'Update dari Postman\', `isi` = \'Isi baru artikel\', `id_kategori` = 1
+WHERE `artikel`.`id` IN (\'3\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `artikel` SET `judul` = \'Update dari Postman\', `isi` = \'Isi baru artikel\', `id_kategori` = 1
+WHERE `artikel`.`id` IN (\'3\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `artikel` SET `judul` = \'Update dari Postman\', `isi` = \'Isi baru artikel\', `id_kategori` = 1
+WHERE `artikel`.`id` IN (\'3\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `artikel` SET `judul` = :judul:, `isi` = :isi:, `id_kategori` = :id_kategori:
+WHERE `artikel`.`id` IN :artikel.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Post.php(61): CodeIgniter\Model->update('3', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update('3')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-28 15:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-28 15:05:28 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`lab_ci4`.`artikel`, CONSTRAINT `fk_kategori_artikel` FOREIGN KEY (`id_kategori`) REFERENCES `kategori` (`id_kategori`)) in C:\xampp\htdocs\lab11_ci\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `artikel...', 0)
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `artikel...')
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `artikel...')
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `artikel...', Array, false)
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\BaseModel.php(1027): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\lab11_ci\ci4\system\Model.php(863): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Post.php(61): CodeIgniter\Model->update('3', Array)
+#8 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(933): App\Controllers\Post->update('3')
+#9 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#10 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lab11_ci\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\lab11_ci\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-06-28 15:05:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`lab_ci4`.`artikel`, CONSTRAINT `fk_kategori_artikel` FOREIGN KEY (`id_kategori`) REFERENCES `kategori` (`id_kategori`))
+[Method: PUT, Route: post/3]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `artikel` SET `judul` = :judul:, `isi` = :isi:, `id_kategori` = :id_kategori:
+WHERE `artikel`.`id` IN :artikel.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\Post.php(61): CodeIgniter\Model->update('3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 15:05:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`lab_ci4`.`artikel`, CONSTRAINT `fk_kategori_artikel` FOREIGN KEY (`id_kategori`) REFERENCES `kategori` (`id_kategori`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `artikel` SET `judul` = \'Update dari Postman\', `isi` = \'Isi baru artikel\', `id_kategori` = 1
+WHERE `artikel`.`id` IN (\'3\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `artikel` SET `judul` = \'Update dari Postman\', `isi` = \'Isi baru artikel\', `id_kategori` = 1
+WHERE `artikel`.`id` IN (\'3\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `artikel` SET `judul` = :judul:, `isi` = :isi:, `id_kategori` = :id_kategori:
+WHERE `artikel`.`id` IN :artikel.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\Post.php(61): CodeIgniter\Model->update('3', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update('3')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 15:05:28 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`lab_ci4`.`artikel`, CONSTRAINT `fk_kategori_artikel` FOREIGN KEY (`id_kategori`) REFERENCES `kategori` (`id_kategori`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `artikel` SET `judul` = \'Update dari Postman\', `isi` = \'Isi baru artikel\', `id_kategori` = 1
+WHERE `artikel`.`id` IN (\'3\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `artikel` SET `judul` = \'Update dari Postman\', `isi` = \'Isi baru artikel\', `id_kategori` = 1
+WHERE `artikel`.`id` IN (\'3\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `artikel` SET `judul` = \'Update dari Postman\', `isi` = \'Isi baru artikel\', `id_kategori` = 1
+WHERE `artikel`.`id` IN (\'3\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `artikel` SET `judul` = :judul:, `isi` = :isi:, `id_kategori` = :id_kategori:
+WHERE `artikel`.`id` IN :artikel.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Post.php(61): CodeIgniter\Model->update('3', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update('3')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-28 15:05:58 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`lab_ci4`.`artikel`, CONSTRAINT `fk_kategori_artikel` FOREIGN KEY (`id_kategori`) REFERENCES `kategori` (`id_kategori`)) in C:\xampp\htdocs\lab11_ci\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `artikel...', 0)
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `artikel...')
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `artikel...')
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `artikel...', Array, false)
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\BaseModel.php(1027): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\lab11_ci\ci4\system\Model.php(863): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Post.php(61): CodeIgniter\Model->update('3', Array)
+#8 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(933): App\Controllers\Post->update('3')
+#9 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#10 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\lab11_ci\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\lab11_ci\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-06-28 15:05:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`lab_ci4`.`artikel`, CONSTRAINT `fk_kategori_artikel` FOREIGN KEY (`id_kategori`) REFERENCES `kategori` (`id_kategori`))
+[Method: PUT, Route: post/3]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `artikel` SET `judul` = :judul:, `isi` = :isi:, `id_kategori` = :id_kategori:
+WHERE `artikel`.`id` IN :artikel.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\Post.php(61): CodeIgniter\Model->update('3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 15:05:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`lab_ci4`.`artikel`, CONSTRAINT `fk_kategori_artikel` FOREIGN KEY (`id_kategori`) REFERENCES `kategori` (`id_kategori`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `artikel` SET `judul` = \'Artikel update via Postman\', `isi` = \'Isinya sudah berubah\', `id_kategori` = 3
+WHERE `artikel`.`id` IN (\'3\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `artikel` SET `judul` = \'Artikel update via Postman\', `isi` = \'Isinya sudah berubah\', `id_kategori` = 3
+WHERE `artikel`.`id` IN (\'3\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `artikel` SET `judul` = :judul:, `isi` = :isi:, `id_kategori` = :id_kategori:
+WHERE `artikel`.`id` IN :artikel.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\Post.php(61): CodeIgniter\Model->update('3', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update('3')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 15:05:58 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`lab_ci4`.`artikel`, CONSTRAINT `fk_kategori_artikel` FOREIGN KEY (`id_kategori`) REFERENCES `kategori` (`id_kategori`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `artikel` SET `judul` = \'Artikel update via Postman\', `isi` = \'Isinya sudah berubah\', `id_kategori` = 3
+WHERE `artikel`.`id` IN (\'3\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `artikel` SET `judul` = \'Artikel update via Postman\', `isi` = \'Isinya sudah berubah\', `id_kategori` = 3
+WHERE `artikel`.`id` IN (\'3\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `artikel` SET `judul` = \'Artikel update via Postman\', `isi` = \'Isinya sudah berubah\', `id_kategori` = 3
+WHERE `artikel`.`id` IN (\'3\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `artikel` SET `judul` = :judul:, `isi` = :isi:, `id_kategori` = :id_kategori:
+WHERE `artikel`.`id` IN :artikel.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Post.php(61): CodeIgniter\Model->update('3', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Post->update('3')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-28 15:06:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:06:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:33:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 16:27:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 16:27:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 16:27:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 16:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 16:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 16:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 16:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 16:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 16:27:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 16:27:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 16:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 16:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 16:49:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 16:49:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 16:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 16:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 16:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 16:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 16:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 16:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-28 16:50:34 --> ArgumentCountError: Too few arguments to function App\Controllers\AjaxController::update(), 0 passed in C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: ajax/update]
+in APPPATH\Controllers\AjaxController.php on line 103.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->update()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 16:50:41 --> ArgumentCountError: Too few arguments to function App\Controllers\AjaxController::update(), 0 passed in C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: ajax/update]
+in APPPATH\Controllers\AjaxController.php on line 103.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->update()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 16:50:49 --> ArgumentCountError: Too few arguments to function App\Controllers\AjaxController::update(), 0 passed in C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: ajax/update]
+in APPPATH\Controllers\AjaxController.php on line 103.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->update()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-28 16:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 16:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-28 16:51:12 --> ArgumentCountError: Too few arguments to function App\Controllers\AjaxController::update(), 0 passed in C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: ajax/update]
+in APPPATH\Controllers\AjaxController.php on line 103.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->update()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 16:51:19 --> ArgumentCountError: Too few arguments to function App\Controllers\AjaxController::update(), 0 passed in C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: ajax/update]
+in APPPATH\Controllers\AjaxController.php on line 103.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->update()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-28 16:51:21 --> ArgumentCountError: Too few arguments to function App\Controllers\AjaxController::update(), 0 passed in C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: ajax/update]
+in APPPATH\Controllers\AjaxController.php on line 103.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AjaxController->update()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AjaxController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-28 16:51:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 16:51:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

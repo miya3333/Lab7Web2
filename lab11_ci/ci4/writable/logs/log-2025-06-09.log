@@ -1,0 +1,14 @@
+CRITICAL - 2025-06-09 01:42:23 --> ErrorException: Undefined variable $row
+[Method: GET, Route: artikel/artikel-pertama]
+in APPPATH\Views\artikel\detail.php on line 5.
+ 1 APPPATH\Views\artikel\detail.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\artikel\\detail.php', 5)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_ci\\ci4\\app\\Views\\artikel\\detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('artikel/detail', [], true)
+ 5 APPPATH\Controllers\Artikel.php(27): view('artikel/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->view('artikel-pertama')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

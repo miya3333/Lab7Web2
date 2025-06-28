@@ -1,0 +1,228 @@
+/* import google font */ 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap'); 
+ 
+/* Reset CSS */ 
+* { 
+    margin: 0; 
+    padding: 0; 
+} 
+body {
+    padding: 2rem 0;
+    line-height:1; 
+    font-size:100%; 
+    font-family:'Open Sans', sans-serif; 
+    color:#5a5a5a;
+    display: flex;
+    justify-content: center;
+} 
+#container { 
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 0 1em #cccccc;
+} 
+ 
+/* header */ 
+header { 
+    padding: 20px; 
+} 
+header h1 { 
+    margin: 20px 10px; 
+    color: #b5b5b5; 
+} 
+
+.content-artikel {
+    height: max-content;
+    padding: 0px 0px 1rem 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* navigasi */ 
+nav { 
+    display: block; 
+    background-color: #1f5faa; 
+} 
+nav a { 
+    padding: 15px 30px; 
+    display: inline-block; 
+    color: #ffffff; 
+    font-size: 14px; 
+    text-decoration: none; 
+    font-weight: bold; 
+}  
+nav a.active, 
+nav a:hover { 
+    background-color: #2b83ea; 
+}
+
+/* Hero Panel */ 
+#hero { 
+    background-color: #e4e4e5; 
+    padding: 50px 20px; 
+    margin-bottom: 20px; 
+} 
+ 
+#hero h1 { 
+    margin-bottom: 20px; 
+    font-size: 35px; 
+} 
+ 
+#hero p { 
+    margin-bottom: 20px; 
+    font-size: 18px; 
+    line-height: 25px; 
+} 
+
+/* main content */ 
+#wrapper {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#main { 
+    float: left; 
+    width: 80%; 
+    padding: 20px; 
+}
+
+/* tabel */
+.table {
+    width: 95%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.table th, 
+.table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table td:first-child {
+    text-align: center;
+    font-weight: bold;
+}
+
+.table td:nth-child(2) {
+    font-weight: bold;
+}
+
+.table td:nth-child(2) p {
+    margin: 5px 0 0;
+    font-weight: normal;
+    color: #666;
+    font-size: 12px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-edit {
+    background-color: #6c757d;
+    color: #1d1d1d;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c9302c;
+}
+
+.btn-ubah {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+}
+
+.btn-ubah:hover {
+    background-color: #5a6268;
+}
+
+/* untuk form pencarian */
+.form-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.form-search input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 250px;
+    transition: border-color 0.3s;
+}
+
+.form-search input[type="text"]:focus {
+    border-color: #1f5faa;
+    outline: none;
+}
+
+.form-search .btn.btn-primary {
+    padding: 10px 20px;
+    background-color: #1f5faa;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-search .btn.btn-primary:hover {
+    background-color: #174b8c;
+}
+
+/* Style untuk footer tabel */
+.table tfoot th {
+    background-color: #4a90e2;
+    color: white;
+}
+
+/* footer */ 
+footer { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clear:both; 
+    background-color:#1d1d1d; 
+    padding:20px; 
+    color:#eee; 
+} 
