@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Vuejs</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>Daftar Artikel</h1>
+        <button id="btn-tambah" @click="tambah">Tambah Data</button>
+        <div class="modal" v-if="showForm">
+            <div class="modal-content">
+                <span class="close" @click="showForm = false">&times;</span>
+                <form id="form-data" @submit.prevent="saveData">
+                    <h3 id="form-title">{{ formTitle }}</h3>
+                    <div><input type="text" name="judul" id="judul" vmodel="formData.judul" placeholder="Judul"
+                            required></div>
+                    <div><textarea name="isi" id="isi" rows="10" vmodel="formData.isi"></textarea></div>
+                    <div>
+                        <select name="status" id="status" vmodel="formData.status">
+                            <option v-for="option in statusOptions" :value="option.value">
+                                {{ option.text }}
+                            </option>
+                        </select>
+                    </div>
+                    <input type="hidden" id="id" v-model="formData.id">
+                    <button type="submit" id="btnSimpan">Simpan</button>
+                    <button @click="showForm = false">Batal</button>
+                </form>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Judul</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(row, index) in artikel">
+                    <td class="center-text">{{ row.id }}</td>
+                    <td>{{ row.judul }}</td>
+                    <td>{{ statusText(row.status) }}</td>
+                    <td class="center-text">
+                        <a href="#" @click="edit(row)" id="button-edit">Edit</a>
+                        <a href="#" @click="hapus(index, row.id)" id="button-hapus">Hapus</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
