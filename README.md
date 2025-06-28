@@ -2832,8 +2832,8 @@ File `index.html`
                     <td>{{ row.judul }}</td>
                     <td>{{ statusText(row.status) }}</td>
                     <td class="center-text">
-                        <a href="#" @click="edit(row)">Edit</a>
-                        <a href="#" @click="hapus(index, row.id)">Hapus</a>
+                        <a href="#" @click="edit(row)" id="button-edit">Edit</a>
+                        <a href="#" @click="hapus(index, row.id)" id="button-hapus">Hapus</a>
                     </td>
                 </tr>
             </tbody>
@@ -2878,7 +2878,7 @@ createApp({
 
 ## 11.4. Form Tambah dan Ubah Data
 
-Pada file index,html sispkan kode berikut sebelum table data.
+Pada file index,html sisipkan kode berikut sebelum table data.
 
 ```html
 <button id="btn-tambah" @click="tambah">Tambah Data</button>
@@ -3010,6 +3010,8 @@ createApp({
 File `style.css`
 
 ```css
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 #app {
     margin: 0 auto;
     width: 900px;
@@ -3035,6 +3037,7 @@ tr:nth-child(odd) {
 }
 
 td {
+    height: 3rem;
     padding: 10px;
 }
 
@@ -3125,7 +3128,49 @@ form button {
     font-weight: bold;
     cursor: pointer;
 }
+
+#button-edit {
+    padding: 0.5rem 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+    background-color: #578fff;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+#button-edit:hover {
+    background-color: #3c60a8;
+}
+
+#button-hapus {
+    padding: 0.5rem 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+    background-color: #ff5757;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+#button-hapus:hover {
+    background-color: #b43f3f;
+}
 ```
+
+Hasil outpunya.
+
+<img src="file/11_2.png" width="max-content">
 
 ---
 
