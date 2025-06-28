@@ -2761,12 +2761,374 @@ Langsung saja klik `Send`, maka akan mendapatkan pesan bahwa data telah berhasil
 # Praktikum 11
 **[Kembali Ke Atas ⬆️](#praktikum-1-11-pemrograman-web-2)**
 
+Buat folder dengan nama `lab8_vuejs` pada docroot webserver `htdocs`
+
 ## 11.1. Penggunaan Framework Vuejs
+
+Yang diperlukan adalah library Vuejs, Axios untuk melakukan call API REST menggunakan CDN.
+
+Library VueJS
+
+```html
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+```
+
+Library Axios
+
+```html
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+```
 
 ## 11.2. Struktur Direktory
 
+Buat Project baru dengan struktur file dan directori seperti berikut:
+
+```bash
+lab8_vuejs/
+├── index.html
+└── assets/
+    ├── css/
+    │   └── style.css
+    └── js/
+        └── app.js
+```
+
+<img src="file/11_1.png" width="max-content">
+
 ## 11.3. Menampilkan Data
 
+File `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Vuejs</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>Daftar Artikel</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Judul</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(row, index) in artikel">
+                    <td class="center-text">{{ row.id }}</td>
+                    <td>{{ row.judul }}</td>
+                    <td>{{ statusText(row.status) }}</td>
+                    <td class="center-text">
+                        <a href="#" @click="edit(row)">Edit</a>
+                        <a href="#" @click="hapus(index, row.id)">Hapus</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
+```
+
+File `apps.js`
+
+```js
+const { createApp } = Vue
+// tentukan lokasi API REST End Point
+const apiUrl = 'http://localhost:8080/lab11_ci/ci4/public/'
+createApp({
+    data() {
+        return {
+            artikel: ''
+        }
+    },
+    mounted() {
+        this.loadData()
+    },
+    methods: {
+        loadData() {
+            axios.get(apiUrl + '/post')
+                .then(response => {
+                    this.artikel = response.data.artikel
+                })
+                .catch(error => console.log(error))
+        },
+        statusText(status) {
+            if (!status) return ''
+            return status == 1 ? 'Publish' : 'Draft'
+        }
+    },
+}).mount('#app')
+```
+
 ## 11.4. Form Tambah dan Ubah Data
+
+Pada file index,html sispkan kode berikut sebelum table data.
+
+```html
+<button id="btn-tambah" @click="tambah">Tambah Data</button>
+<div class="modal" v-if="showForm">
+    <div class="modal-content">
+        <span class="close" @click="showForm = false">&times;</span>
+        <form id="form-data" @submit.prevent="saveData">
+            <h3 id="form-title">{{ formTitle }}</h3>
+            <div><input type="text" name="judul" id="judul" vmodel="formData.judul" placeholder="Judul" required></div>
+            <div><textarea name="isi" id="isi" rows="10" vmodel="formData.isi"></textarea></div>
+            <div>
+                <select name="status" id="status" vmodel="formData.status">
+                    <option v-for="option in statusOptions" :value="option.value">
+                        {{ option.text }}
+                    </option>
+                </select>
+            </div>
+            <input type="hidden" id="id" v-model="formData.id">
+            <button type="submit" id="btnSimpan">Simpan</button>
+            <button @click="showForm = false">Batal</button>
+        </form>
+    </div>
+</div>
+```
+
+File `apps.js` lengkapi kodenya
+
+```js
+const { createApp } = Vue
+
+// tentukan lokasi API REST End Point
+const apiUrl = 'http://localhost:8080/lab11_ci/ci4/public/'
+
+createApp({
+    data() {
+        return {
+            artikel: '',
+            formData: {
+                id: null,
+                judul: '',
+                isi: '',
+                status: 0
+            },
+            showForm: false,
+            formTitle: 'Tambah Data',
+            formTitles: [{ text: 'Tambah Datas' }],
+            statusOptions: [
+                { text: 'Draft', value: 0 },
+                { text: 'Publish', value: 1 },
+            ],
+        }
+    },
+    mounted() {
+        this.loadData()
+
+    },
+    methods: {
+        loadData() {
+            axios.get(apiUrl + '/post')
+                .then(response => {
+                    this.artikel = response.data.artikel
+                })
+                .catch(error => console.log(error))
+        },
+        tambah() {
+            this.showForm = true
+            this.formTitle = 'Tambah Data'
+            this.formData = {
+                id: null,
+                judul: '',
+                isi: '',
+                status: 0
+            }
+        },
+        hapus(index, id) {
+            if (confirm('Yakin menghapus data?')) {
+                axios.delete(apiUrl + '/post/' + id)
+                    .then(response => {
+                        this.artikel.splice(index, 1)
+                    })
+                    .catch(error => console.log(error))
+            }
+        },
+        edit(data) {
+            this.showForm = true;
+            this.formTitle = 'Ubah Data'
+            this.formData = {
+                id: data.id,
+                judul: data.judul,
+                isi: data.isi,
+                status: data.status
+            };
+            console.log(data)
+            console.log(this.formData)
+        },
+        saveData() {
+            if (this.formData.id) {
+                axios.put(apiUrl + '/post/' + this.formData.id, this.formData)
+                    .then(response => {
+                        this.loadData()
+                    })
+                    .catch(error => console.log(error))
+                console.log('Update item:', this.formData);
+            } else {
+                axios.post(apiUrl + '/post', this.formData)
+                    .then(response => {
+                        this.loadData()
+                    })
+                    .catch(error => console.log(error))
+                console.log('Tambah item:', this.formData);
+            }
+            // Reset form data
+            this.formData = {
+                id: null,
+                judul: '',
+                isi: '',
+                status: 0
+            };
+            this.showForm = false;
+        },
+        statusText(status) {
+            if (!status) return ''
+            return status == 1 ? 'Publish' : 'Draft'
+        }
+    },
+}).mount('#app')
+```
+
+File `style.css`
+
+```css
+#app {
+    margin: 0 auto;
+    width: 900px;
+}
+
+table {
+    min-width: 700px;
+    width: 100%;
+}
+
+th {
+    padding: 10px;
+    background: #5778ff !important;
+    color: #ffffff;
+}
+
+tr td {
+    border-bottom: 1px solid #eff1ff;
+}
+
+tr:nth-child(odd) {
+    background-color: #eff1ff;
+}
+
+td {
+    padding: 10px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+td a {
+    margin: 5px;
+}
+
+#form-data {
+    width: 600px;
+}
+
+form input {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+form select {
+    margin-bottom: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+form div {
+    margin-bottom: 5px;
+    position: relative;
+}
+
+form button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#btn-tambah {
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #3152d6;
+    color: #ffffff;
+    border: 1px solid #3152d6;
+}
+
+#btnSimpan {
+    background-color: #3152d6;
+    color: #ffffff;
+    border: 1px solid #3152d6;
+}
+
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+```
+
+---
+
+# Link Demo Project
+
+[Link Demo Project di Youtube](http://localhost:8080/lab8_vuejs/#)
 
 ---
