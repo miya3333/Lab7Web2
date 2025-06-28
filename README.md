@@ -21,6 +21,8 @@ Aldi Hermansyah - 312310200 - Ti.23.A.2
 
 **[Praktikum 10](#praktikum-10)** - **[Praktikum 11](#praktikum-11)**
 
+**[Link Demo](#link-demo-project)**
+
 ---
 
 # Praktikum 1
