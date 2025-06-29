@@ -3177,6 +3177,6 @@ Hasil outpunya.
 # Link Demo Project
 **[Kembali Ke Atas ⬆️](#praktikum-1-11-pemrograman-web-2)**
 
-[Link Demo Project di Youtube](http://localhost:8080/lab8_vuejs/#)
+[Link Demo Project di Youtube](https://youtu.be/jAYOIZPI2Sk)
 
 ---
